@@ -1,14 +1,14 @@
 {
-    "fr": {
-        "welcome_message": "Bienvenue sur notre site !",
-        "about_us": "À propos de nous",
-        "contact_us": "Contactez-nous",
-        "learn_more": "En savoir plus"
-    },
     "en": {
-        "welcome_message": "Welcome to our site!",
-        "about_us": "About us",
-        "contact_us": "Contact us",
-        "learn_more": "Learn more"
+        "menuLabel": "Menu",
+        "pageTitle": "Welcome to our Restaurant"
+    },
+    "fr": {
+        "menuLabel": "Menu",
+        "pageTitle": "Bienvenue dans notre restaurant"
+    },
+    "nl": {
+        "menuLabel": "Menu",
+        "pageTitle": "Welkom bij ons restaurant"
     }
 }

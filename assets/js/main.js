@@ -1,10 +1,4 @@
-/**
-* Template Name: Restaurantly
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function () {
   "use strict";
 
@@ -366,5 +360,43 @@
       mirror: false
     })
   });
+  /**
+     * Function to translate text
+     */
+  function translateText() {
+    // Translate menu label
+    let menuLabelElement = document.querySelector(".scrollto");
+    if (menuLabelElement) {
+      menuLabelElement.textContent = i18next.t("menuLabel");
+    }
 
-})()
+    // Translate other text elements as needed
+    // ...
+  }
+
+  /**
+   * Language switcher event listener
+   */
+  document.addEventListener("change", (event) => {
+    if (event.target && event.target.matches("#languageSelect")) {
+      let selectedLanguage = event.target.value;
+      changeLanguage(selectedLanguage);
+    }
+  });
+
+  /**
+   * Change language
+   */
+  function changeLanguage(language) {
+    i18next.changeLanguage(language, (err, t) => {
+      if (err) return console.error(err);
+      translateText();
+    });
+  }
+
+  /**
+   * Call the translateText function initially to translate the initial text
+   */
+  translateText();
+});
+

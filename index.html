@@ -31,6 +31,56 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script>
+    // Load translations from JSON file
+    function loadTranslations() {
+      return fetch('assets/js/translations.json')
+        .then(response => response.json())
+        .then(data => data);
+    }
+
+    // Initialize i18next
+    function initI18next(translations) {
+      i18next.init({
+        lng: 'en', // Default language
+        fallbackLng: 'en', // Fallback language
+        resources: translations
+      });
+    }
+
+    // Function to translate text
+    function translateText() {
+      // Translate menu label
+      let menuLabelElement = document.querySelector('.scrollto');
+      if (menuLabelElement) {
+        menuLabelElement.textContent = i18next.t('menuLabel');
+      }
+
+      // Translate page title
+      let pageTitleElement = document.querySelector('title');
+      if (pageTitleElement) {
+        pageTitleElement.textContent = i18next.t('pageTitle');
+      }
+
+      // Translate other text elements as needed
+      // ...
+    }
+
+    // Language switcher event listener
+    function changeLanguage(language) {
+      i18next.changeLanguage(language, (err, t) => {
+        if (err) return console.error(err);
+        translateText(); // Call the function to translate text on language change
+      });
+    }
+
+    // Load translations and initialize i18next
+    loadTranslations()
+      .then(translations => {
+        initI18next(translations);
+        translateText(); // Call the function to translate the initial text
+      });
+  </script>
 </head>
 
 <body>
@@ -47,9 +97,9 @@
 
       <div class="languages d-none d-md-flex align-items-center">
         <ul>
-          <li><a href="#">EN</a></li>
-          <li><a href="#">FR</a></li>
-          <li><a href="#">NL</a></li>
+          <li><a href="#" onclick="changeLanguage('en')">EN</a></li>
+          <li><a href="#" onclick="changeLanguage('fr')">FR</a></li>
+          <li><a href="#" onclick="changeLanguage('nl')">NL</a></li>
         </ul>
       </div>
     </div>
@@ -70,7 +120,6 @@
           <li><a class="nav-link scrollto" href="#menu">Activité</a></li>
           <li><a class="nav-link scrollto" href="#specials">A découvrir</a></li>
           <li><a class="nav-link scrollto" href="#events">Chambres</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li> -->
           <li><a class="nav-link scrollto" href="#gallery">Galeries</a></li>
 
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
