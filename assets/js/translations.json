@@ -1,14 +1,14 @@
 {
     "en": {
         "menuLabel": "Menu",
-        "pageTitle": "Welcome to our Restaurant"
+        "pageTitle": "Welcome to La Villa du Pré du Cerf"
     },
     "fr": {
         "menuLabel": "Menu",
-        "pageTitle": "Bienvenue dans notre restaurant"
+        "pageTitle": "Bienvenue à La Villa du Pré du Cerf"
     },
     "nl": {
         "menuLabel": "Menu",
-        "pageTitle": "Welkom bij ons restaurant"
+        "pageTitle": "Welkom bij La Villa du Pré du Cerf"
     }
 }
