@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -27,61 +27,11 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/i18next@22.5.0/+esm"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- <script>
-    // Load translations from JSON file
-    function loadTranslations() {
-      return fetch('assets/js/translations.json')
-        .then(response => response.json())
-        .then(data => data);
-    }
-
-    // Initialize i18next
-    function initI18next(translations) {
-      i18next.init({
-        lng: 'en', // Default language
-        fallbackLng: 'en', // Fallback language
-        resources: translations
-      });
-    }
-
-    // Function to translate text
-    function translateText() {
-      // Translate menu label
-      let menuLabelElement = document.querySelector('.scrollto');
-      if (menuLabelElement) {
-        menuLabelElement.textContent = i18next.t('menuLabel');
-      }
-
-      // Translate page title
-      let pageTitleElement = document.querySelector('title');
-      if (pageTitleElement) {
-        pageTitleElement.textContent = i18next.t('pageTitle');
-      }
-
-      // Translate other text elements as needed
-      // ...
-    }
-
-    // Language switcher event listener
-    function changeLanguage(language) {
-      i18next.changeLanguage(language, (err, t) => {
-        if (err) return console.error(err);
-        translateText(); // Call the function to translate text on language change
-      });
-    }
-
-    // Load translations and initialize i18next
-    loadTranslations()
-      .then(translations => {
-        initI18next(translations);
-        translateText(); // Call the function to translate the initial text
-      });
-  </script> -->
 </head>
 
 <body>
@@ -98,9 +48,9 @@
 
       <div class="languages d-none d-md-flex align-items-center">
         <ul>
-          <li><a href="#" onclick="changeLanguage('en')">EN</a></li>
-          <li><a href="#" onclick="changeLanguage('fr')">FR</a></li>
-          <li><a href="#" onclick="changeLanguage('nl')">NL</a></li>
+
+          <li><a id="en" class="translate">EN</a></li>
+          <li><a id="fr" class="translate">FR</a></li>
         </ul>
       </div>
     </div>
@@ -116,12 +66,13 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">A propos</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Activité</a></li>
-          <li><a class="nav-link scrollto" href="#specials">A découvrir</a></li>
-          <li><a class="nav-link scrollto" href="#events">Chambres</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Galeries</a></li>
+
+          <li><a class="nav-link scrollto active lang" key="home" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto lang" key="activity" href="#menu">Activité</a></li>
+          <li><a class="nav-link scrollto lang" key="about" href="#about">A propos</a></li>
+          <li><a class="nav-link scrollto lang" key="to_discover" href="#specials">A découvrir</a></li>
+          <li><a class="nav-link scrollto lang" key="rooms" href="#events">Chambres</a></li>
+          <li><a class="nav-link scrollto lang" key="gallery" href="#gallery">Galeries</a></li>
 
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -136,12 +87,9 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
-        <div class="col-lg-8">
-          <h1 id="welcome"></h1>
-          <h1 id="welcome-text">Bienvenue à <span>{{pageTitle}}</span></h1>
-          <!-- <h1>Welcome to <span>Restaurantly</span></h1> -->
-          <!-- <h2>Delivering great food for more than 18 years!</h2> -->
-          <h2 id="#welcome"></h2>
+        <div class="col-lg-8 lang" >
+          <h1> <div class="lang" key="welcome"> Bienvenue à </div> <span key="welcome1">La Villa du Pré du cerf</span></h1>
+          <!-- <h2 id="#welcome"></h2> -->
 
           <div class="btns">
             <a href="#events" class="btn-menu animated fadeInUp scrollto">Nos chambres</a>
@@ -970,7 +918,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
+
 
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -981,6 +929,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/translation.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 

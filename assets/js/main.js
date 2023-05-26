@@ -1,6 +1,45 @@
 
-import i18next from 'i18next';
+
+
 (function () {
+
+  var arrLang = {
+    'en': {
+      'home': 'Home',
+      'activity': 'Activity',
+      'about': 'About',
+      'to_discover': 'To discover',
+      'rooms': 'Rooms',
+      'gallery': 'Gallery',
+      'contact': 'Contact',
+      'welcome': 'Welcome to',
+      'welcome1': "La Villa du pré du cerf"
+
+    },
+    'fr': {
+      'home': 'Accueil',
+      'activity': 'Activité',
+      'to_discover': 'À découvrir',
+      'about': 'À propos',
+      'gallery': 'Galerie',
+      'rooms': 'Chambres',
+      'contact': 'Contact',
+      'welcome': 'Bienvenue à',
+      'welcome1': "La Villa du pré du cerf"
+
+    }
+  };
+
+  $('.translate').click(function () {
+    var lang = $(this).attr('id');
+
+    $('.lang').each(function (index, item) {
+      $(this).text(arrLang[lang][$(this).attr('key')]);
+    });
+  });
+
+
+
   "use strict";
 
   /**
@@ -361,43 +400,6 @@ import i18next from 'i18next';
       mirror: false
     })
   });
-  /**
-     * Function to translate text
-     */
-  function translateText() {
-    // Translate menu label
-    let menuLabelElement = document.querySelector(".scrollto");
-    if (menuLabelElement) {
-      menuLabelElement.textContent = i18next.t("menuLabel");
-    }
 
-    // Translate other text elements as needed
-    // ...
-  }
 
-  /**
-   * Language switcher event listener
-   */
-  document.addEventListener("change", (event) => {
-    if (event.target && event.target.matches("#languageSelect")) {
-      let selectedLanguage = event.target.value;
-      changeLanguage(selectedLanguage);
-    }
-  });
-
-  /**
-   * Change language
-   */
-  function changeLanguage(language) {
-    i18next.changeLanguage(language, (err, t) => {
-      if (err) return console.error(err);
-      translateText();
-    });
-  }
-
-  /**
-   * Call the translateText function initially to translate the initial text
-   */
-  translateText();
-});
-
+})()
