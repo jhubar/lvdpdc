@@ -1,14 +1,24 @@
 {
     "en": {
-        "menuLabel": "Menu",
-        "pageTitle": "Welcome to La Villa du Pré du Cerf"
+        "home": "Home",
+        "activity": "Activity",
+        "about": "About",
+        "to_discover": "To discover",
+        "rooms": "Rooms",
+        "gallery": "Gallery",
+        "contact": "Contact",
+        "welcome": "Welcome to",
+        "welcome1": "La Villa du pré du cer"
     },
     "fr": {
-        "menuLabel": "Menu",
-        "pageTitle": "Bienvenue à La Villa du Pré du Cerf"
-    },
-    "nl": {
-        "menuLabel": "Menu",
-        "pageTitle": "Welkom bij La Villa du Pré du Cerf"
+        "home": "Accueil",
+        "activity": "Activité",
+        "to_discover": "À découvrir",
+        "about": "À propos",
+        "gallery": "Galerie",
+        "rooms": "Chambres",
+        "contact": "Contact",
+        "welcome": "Bienvenue à",
+        "welcome1": "La Villa du pré du cerf"
     }
 }

@@ -3,32 +3,15 @@
 
 (function () {
 
-  var arrLang = {
-    'en': {
-      'home': 'Home',
-      'activity': 'Activity',
-      'about': 'About',
-      'to_discover': 'To discover',
-      'rooms': 'Rooms',
-      'gallery': 'Gallery',
-      'contact': 'Contact',
-      'welcome': 'Welcome to',
-      'welcome1': "La Villa du pré du cerf"
 
-    },
-    'fr': {
-      'home': 'Accueil',
-      'activity': 'Activité',
-      'to_discover': 'À découvrir',
-      'about': 'À propos',
-      'gallery': 'Galerie',
-      'rooms': 'Chambres',
-      'contact': 'Contact',
-      'welcome': 'Bienvenue à',
-      'welcome1': "La Villa du pré du cerf"
+  $('.translate').click(function () {
+    var lang = $(this).attr('id');
 
-    }
-  };
+    $('.lang').each(function (index, item) {
+      $(this).text(arrLang[lang][$(this).attr('key')]);
+    });
+  });
+
 
   $('.translate').click(function () {
     var lang = $(this).attr('id');
@@ -244,32 +227,23 @@
       '325177846.jpeg',
       '272440438.jpeg',
       '267105799.jpeg',
-      // '379937287.jpeg',
+
       '325177860.jpeg',
       '273658896.jpeg',
       '272440473.jpeg',
-      // '273658536.jpeg',
-      // '272440449.jpeg',
-      // '267296291.jpeg',
-      // '267296287.jpeg',
-      // '272441669.jpeg',
+
       '285957417.jpeg',
       '325177840.jpeg',
-      // '379937185.jpeg', 
-      // '267296232.jpeg',
+
       '325177841.jpeg',
       '272440487.jpeg',
       '325177857.jpeg',
       '285957338.jpeg',
       '325177861.jpeg',
       '325177862.jpeg',
-      // '379937689.jpeg',
-      // '379937373.jpeg'
-      // '325177858.jpeg',
+
       '272440451.jpeg',
-      // '325177839.jpeg', 
-      // '325177854.jpeg',
-      // '325177855.jpeg', '267296271.jpeg', '325177859.jpeg', '379937178.jpeg', '272440457.jpeg', '272441704.jpeg', '272441801.jpeg', '325177852.jpeg', '267105797.jpeg', '325177848.jpeg', '273658533.jpeg', '267296282.jpeg', '325177853.jpeg', '333079587.jpeg'
+
     ]
 
     // Get the gallery row element
