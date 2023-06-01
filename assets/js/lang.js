@@ -34,6 +34,22 @@ var arrLang = {
         "team": "Equipe",
         "team_1": "Notre équipe",
         "contact_1": "Contactez-nous",
+        "description_room_1": "Vivez une expérience unique dans la chambre Albert Einstein, où l'histoire rencontre le confort moderne.",
+        "description_room_2": "Découvrez un refuge artistique et luxueux dans la chambre \"Atelier du Peintre\", offrant une expérience unique où confort et créativité se marient harmonieusement.",
+        "description_room_3": "Plongez dans l'atmosphère exclusive de la chambre \"Golf Club\" et laissez-vous séduire par son ambiance raffinée, idéale pour les amateurs de golf en quête de repos après une journée sur le parcours.",
+        "description_room_1_boulet_1": "Décor élégant avec des références à ses découvertes.",
+        "description_room_1_boulet_2": "Confort luxueux et ambiance propice à la réflexion.",
+        "description_room_1_boulet_3": "2 Chambres, une salle de bain.",
+        "description_room_1_boulet_4": "un lit 160cm et 2 lits 90cm",
+        "description_room_2_boulet_1": "Décor inspiré d'un atelier d'artiste, favorisant la créativité.",
+        "description_room_2_boulet_2": "Lit king-size de 180 cm pour des nuits reposantes.",
+        "description_room_2_boulet_3": "Deux chambres pour plus d'espace et d'intimité.",
+        "description_room_3_boulet_1": "Décor élégant aux accents de golf, créant une ambiance sportive.",
+        "description_room_3_boulet_2": "Lit king-size de 180 cm pour un repos optimal après une journée sur le green.",
+        "description_room_3_boulet_3": "Deux chambres pour accueillir confortablement les golfeurs en quête de repos.",
+
+
+
 
 
 
@@ -72,6 +88,21 @@ var arrLang = {
         "team": "Team",
         "team_1": "Our team",
         "contact_1": "Contact us",
+        "description_room_1": "Live a unique experience in the Albert Einstein room, where history meets modern comfort.",
+        "description_room_2": "Discover an artistic and luxurious refuge in the \"Atelier du Peintre\" room, offering a unique experience where comfort and creativity blend harmoniously.",
+        "description_room_3": "Immerse yourself in the exclusive atmosphere of the \"Golf Club\" room and let yourself be seduced by its refined atmosphere, ideal for golf enthusiasts looking for rest after a day on the course.",
+        "description_room_1_boulet_1": "Elegant decor with references to his discoveries.",
+        "description_room_1_boulet_2": "Luxurious comfort and an atmosphere conducive to reflection.",
+        "description_room_1_boulet_3": "2 Bedrooms, one bathroom.",
+        "description_room_1_boulet_4": "a 160cm bed and 2 90cm beds",
+        "description_room_2_boulet_1": "Decor inspired by an artist's studio, promoting creativity.",
+        "description_room_2_boulet_2": "180 cm king-size bed for restful nights.",
+        "description_room_2_boulet_3": "Two bedrooms for more space and privacy.",
+        "description_room_3_boulet_1": "Elegant decor with golf accents, creating a sporty atmosphere.",
+        "description_room_3_boulet_2": "180 cm king-size bed for optimal rest after a day on the green.",
+        "description_room_3_boulet_3": "Two bedrooms to comfortably accommodate golfers looking for rest.",
+
+
 
 
 
