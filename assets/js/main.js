@@ -219,92 +219,8 @@
     }
 
   });
-  window.addEventListener('DOMContentLoaded', function () {
-    // Image sources
-    var imageSources = [
-
-      '325177850.jpeg',
-      '325177846.jpeg',
-      '272440438.jpeg',
-      '267105799.jpeg',
-
-      '325177860.jpeg',
-      '273658896.jpeg',
-      '272440473.jpeg',
-
-      '285957417.jpeg',
-      '325177840.jpeg',
-
-      '325177841.jpeg',
-      '272440487.jpeg',
-      '325177857.jpeg',
-      '285957338.jpeg',
-      '325177861.jpeg',
-      '325177862.jpeg',
-
-      '272440451.jpeg',
-
-    ]
-
-    // Get the gallery row element
-    var galleryRow = document.getElementById('galleryRow');
-
-    // Generate the gallery HTML
-    var galleryHtml = '';
-    for (var i = 0; i < imageSources.length; i++) {
-      galleryHtml += `
-        <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="assets/img/gallery/${imageSources[i]}" class="gallery-lightbox" data-gall="gallery-item">
-              <img src="assets/img/gallery/${imageSources[i]}" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
-      `;
-    }
-
-    // Insert the generated HTML into the gallery row
-    galleryRow.innerHTML = galleryHtml;
-  });
-  // window.addEventListener('DOMContentLoaded', function () {
-  //   var assetsFolderPath = '/img/gallery/';
-
-  //   fetch(assetsFolderPath)
-  //     .then(response => response.text())
-  //     .then(data => {
-  //       var parser = new DOMParser();
-  //       var html = parser.parseFromString(data, 'text/html');
-  //       var imageElements = html.querySelectorAll('a[href$=".jpg"]');
-
-  //       var galleryRow = document.getElementById('galleryRow');
-
-  //       var galleryHtml = '';
-  //       imageElements.forEach(function (element) {
-  //         var src = element.getAttribute('href');
-  //         galleryHtml += `
-  //           <div class="col-lg-3 col-md-4">
-  //             <div class="gallery-item">
-  //               <a href="${assetsFolderPath}${src}" class="gallery-lightbox" data-gall="gallery-item">
-  //                 <img src="${assetsFolderPath}${src}" alt="" class="img-fluid">
-  //               </a>
-  //             </div>
-  //           </div>
-  //         `;
-  //       });
-
-  //       galleryRow.innerHTML = galleryHtml;
-  //     })
-  //     .catch(error => {
-  //       console.error('Error fetching images:', error);
-  //     });
-  // });
 
 
-
-
-  /**
-   * Initiate glightbox 
-   */
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
@@ -361,6 +277,10 @@
    */
   const galleryLightbox = GLightbox({
     selector: '.gallery-lightbox'
+  });
+
+  const roomLightbox = GLightbox({
+    selector: '.room-lightbox'
   });
 
   /**
