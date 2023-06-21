@@ -48,6 +48,7 @@
     }
   });
 
+
   // Function to validate the form fields
   function validateForm() {
     // Get the form inputs
