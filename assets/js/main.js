@@ -20,6 +20,25 @@
       $(this).text(arrLang[lang][$(this).attr('key')]);
     });
   });
+  $('#calendarButtonAlbertEinstein').click(function () {
+    window.open('https://calendar.google.com/calendar/embed?src=2iff5orohpup2r34vtn3u7of92o8siqe%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
+  });
+
+  $('#calendarButtonAtelierduPeintre').click(function () {
+    window.open('https://calendar.google.com/calendar/embed?src=g9q9p46jn812804n5efffn7lspbhvqtf%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
+  });
+
+  $('#calendarButtonCafeCramique').click(function () {
+    window.open('https://calendar.google.com/calendar/embed?src=clbtncc1um6mrs26hpkqutqkd6l7hlib%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
+  });
+
+  $('#calendarButtonGolfClub').click(function () {
+    window.open('https://calendar.google.com/calendar/embed?src=rggp6hbop7upusqkccrc6s33q4s6f6ac%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
+  });
+
+  $('#calendarButtonSousLeTilleul').click(function () {
+    window.open('https://calendar.google.com/calendar/embed?src=v3n3908lqk3f4lamv6t0p59g7rkqvhve%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
+  });
 
 
 
@@ -36,40 +55,41 @@
       return document.querySelector(el)
     }
   }
-  document.addEventListener('DOMContentLoaded', function () {
-    var calendarButtonAlbertEinstein = document.getElementById('calendarButtonAlbertEinstein');
-    calendarButtonAlbertEinstein.addEventListener('click', function () {
-      window.open('https://calendar.google.com/calendar/embed?src=2iff5orohpup2r34vtn3u7of92o8siqe%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
-    });
-  });
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   var calendarButtonAlbertEinstein = document.getElementById('calendarButtonAlbertEinstein');
+  //   calendarButtonAlbertEinstein.addEventListener('click', function () {
+  //     window.open('https://calendar.google.com/calendar/embed?src=2iff5orohpup2r34vtn3u7of92o8siqe%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
+  //   });
+  // });
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var calendarButtonAtelierduPeintre = document.getElementById('calendarButtonAtelierduPeintre');
-    calendarButtonAtelierduPeintre.addEventListener('click', function () {
-      window.open('https://calendar.google.com/calendar/embed?src=g9q9p46jn812804n5efffn7lspbhvqtf%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
-    });
-  });
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var calendarButtonCafeCramique = document.getElementById('calendarButtonCafeCramique');
-    calendarButtonCafeCramique.addEventListener('click', function () {
-      window.open('https://calendar.google.com/calendar/embed?src=clbtncc1um6mrs26hpkqutqkd6l7hlib%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
-    });
-  });
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   var calendarButtonAtelierduPeintre = document.getElementById('calendarButtonAtelierduPeintre');
+  //   calendarButtonAtelierduPeintre.addEventListener('click', function () {
+  //     window.open('https://calendar.google.com/calendar/embed?src=g9q9p46jn812804n5efffn7lspbhvqtf%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
+  //   });
+  // });
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var calendarButtonGolfClub = document.getElementById('calendarButtonGolfClub');
-    calendarButtonGolfClub.addEventListener('click', function () {
-      window.open('https://calendar.google.com/calendar/embed?src=rggp6hbop7upusqkccrc6s33q4s6f6ac%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
-    });
-  });
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   var calendarButtonCafeCramique = document.getElementById('calendarButtonCafeCramique');
+  //   calendarButtonCafeCramique.addEventListener('click', function () {
+  //     window.open('https://calendar.google.com/calendar/embed?src=clbtncc1um6mrs26hpkqutqkd6l7hlib%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
+  //   });
+  // });
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var calendarButtonSousLeTilleul = document.getElementById('calendarButtonSousLeTilleul');
-    calendarButtonSousLeTilleul.addEventListener('click', function () {
-      window.open('https://calendar.google.com/calendar/embed?src=v3n3908lqk3f4lamv6t0p59g7rkqvhve%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
-    });
-  });
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   var calendarButtonGolfClub = document.getElementById('calendarButtonGolfClub');
+  //   calendarButtonGolfClub.addEventListener('click', function () {
+  //     window.open('https://calendar.google.com/calendar/embed?src=rggp6hbop7upusqkccrc6s33q4s6f6ac%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
+  //   });
+  // });
+
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   var calendarButtonSousLeTilleul = document.getElementById('calendarButtonSousLeTilleul');
+  //   calendarButtonSousLeTilleul.addEventListener('click', function () {
+  //     window.open('https://calendar.google.com/calendar/embed?src=v3n3908lqk3f4lamv6t0p59g7rkqvhve%40import.calendar.google.com&ctz=Europe%2FBrussels', '_blank');
+  //   });
+  // });
 
   /**
    * Easy event listener function

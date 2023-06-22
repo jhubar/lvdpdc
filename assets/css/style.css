@@ -1096,6 +1096,16 @@ section {
   color: #cda45e;
 }
 
+.events .event-item h4 {
+
+  font-size: 12px;
+  color: #cda45e;
+
+  margin: 20px 0px 0px 0px;
+
+  text-decoration: underline;
+}
+
 .events .event-item .price {
   font-size: 26px;
   font-family: "Open Sans", sans-serif;
