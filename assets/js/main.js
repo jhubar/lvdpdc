@@ -283,7 +283,7 @@
    * Events slider
    */
   new Swiper('.events-slider', {
-    speed: 600,
+    speed: 1000,
     loop: true,
     autoplay: {
       delay: 5000,
@@ -332,9 +332,15 @@
   const galleryLightbox = GLightbox({
     selector: '.gallery-lightbox'
   });
+  const roomLightboxalbertEinstein = GLightbox({
+    selector: '.room-lightbox-albert-einstein'
+  });
 
+  const roomLightboxAtelier = GLightbox({
+    selector: '.room-lightbox-atelier'
+  });
   const roomLightbox = GLightbox({
-    selector: '.room-lightbox'
+    selector: '.room-lightbox-golf'
   });
 
   /**

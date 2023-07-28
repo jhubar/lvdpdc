@@ -1097,12 +1097,9 @@ section {
 }
 
 .events .event-item h4 {
-
   font-size: 12px;
   color: #cda45e;
-
   margin: 20px 0px 0px 0px;
-
   text-decoration: underline;
 }
 
@@ -1364,6 +1361,35 @@ section {
   transform: scale(1.1);
 }
 
+.gallery .room-item-albert-einstein {
+  overflow: hidden;
+  border-right: 3px solid #454035;
+  border-bottom: 3px solid #454035;
+}
+
+
+.gallery .room-item-albert-einstein img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .room-item-albert-einstein:hover img {
+  transform: scale(1.1);
+}
+
+/* .gallery .room-item-atelier {
+  overflow: hidden;
+  border-right: 3px solid #454035;
+  border-bottom: 3px solid #454035;
+}
+
+.gallery .room-item-atelier img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .room-item-atelier:hover img {
+  transform: scale(1.1);
+}
+
 .gallery .room-item {
   overflow: hidden;
   border-right: 3px solid #454035;
@@ -1376,7 +1402,7 @@ section {
 
 .gallery .room-item:hover img {
   transform: scale(1.1);
-}
+} */
 
 /*--------------------------------------------------------------
 # Chefs
