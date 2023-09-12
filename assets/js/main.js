@@ -282,29 +282,29 @@
   /**
    * Events slider
    */
-  new Swiper('.events-slider', {
-    speed: 1000,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  // new Swiper('.events-slider', {
+  //   speed: 1000,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 15000,
+  //     disableOnInteraction: false
+  //   },
+  //   slidesPerView: 'auto',
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   }
+  // });
 
   /**
-  * Roem slider
+  * Room slider
   */
   new Swiper('.events-slider', {
     speed: 1000,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 45000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',

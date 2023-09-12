@@ -1331,6 +1331,12 @@ section {
   text-decoration: underline;
 }
 
+.events .event-item h5 {
+  font-size: 12px;
+  color: #cda45e;
+  margin: 20px 0px 20px 0px;
+}
+
 .events .event-item .price {
   font-size: 26px;
   font-family: "Open Sans", sans-serif;
@@ -1340,6 +1346,11 @@ section {
 
 .events .event-item .price span {
   border-bottom: 2px solid #cda45e;
+}
+
+.small-icon {
+  font-size: 0.75em;
+  /* Ajustez cette valeur selon la taille souhaitée */
 }
 
 .events .event-item ul {
@@ -1481,6 +1492,62 @@ section {
 .book-a-table .php-email-form button[type=submit]:hover {
   background: #d3af71;
 }
+
+.book-a-table .php-email-form select {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  background: #0c0b09;
+  border-color: #625b4b;
+  color: white;
+  height: 44px;
+  /* to match the input height */
+  appearance: none;
+  /* to remove default styling on some browsers */
+  -webkit-appearance: none;
+  /* for Safari and Chrome */
+  -moz-appearance: none;
+  /* for Firefox */
+  padding-right: 25px;
+  /* to prevent text overlap with the dropdown arrow */
+}
+
+.book-a-table .php-email-form select:focus {
+  border-color: #cda45e;
+}
+
+/* For the dropdown arrow in the select box */
+.book-a-table .php-email-form select::-ms-expand {
+  display: none;
+  /* for IE and Edge */
+}
+
+/* Couleur pour l'option selected et disabled */
+.book-a-table .php-email-form select option:disabled {
+  color: #a49b89;
+  /* La même couleur que les placeholders */
+}
+
+
+
+/* Optional: Add a custom arrow using a background-image if you want */
+/*
+.book-a-table .php-email-form select {
+  background-image: url('path-to-your-arrow-image.png');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+*/
+
+/* Styling the option elements */
+.book-a-table .php-email-form select option {
+  background-color: #0c0b09;
+  /* This is to ensure the dropdown options match the select background */
+  color: white;
+  /* Making the text readable */
+}
+
+
 
 /*--------------------------------------------------------------
 # Testimonials

@@ -68,14 +68,12 @@
                 <ul>
 
                     <li><a class="nav-link scrollto active lang" key="home" href="index.html#hero">Home</a></li>
-                    <li><a class="nav-link scrollto lang" key="activity" href="index.html#menu">Activité</a></li>
-                    <li><a class="nav-link scrollto lang" key="about" href="index.html#about">A propos</a></li>
-                    <li><a class="nav-link scrollto lang" key="to_discover" href="index.html#specials">A découvrir</a>
-                    </li>
                     <li><a class="nav-link scrollto lang" key="rooms" href="index.html#events">Chambres</a></li>
+                    <li><a class="nav-link scrollto lang" key="about" href="index.html#restaurant">Restaurant</a></li>
+                    <li><a class="nav-link scrollto lang" key="about" href="index.html#loisir">Loisir & détente</a></li>
                     <li><a class="nav-link scrollto lang" key="gallery" href="index.html#gallery">Galeries</a></li>
-
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto lang" key="to_discover" href="index.html#testimonials">Avis</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
 
 
 
@@ -203,7 +201,21 @@
                                         data-msg="Please enter at least 1 chars">
                                     <div class="validate"></div>
                                 </div>
+                                <div class="col-lg-6 col-md-6 form-group mt-3">
+                                    <input type="text" class="form-control" name="room" id="room-book-room"
+                                        placeholder="Nom de la chambre" value="Golf club" readonly>
+                                    <div class="validate"></div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 form-group mt-3">
+                                    <input type="number" class="form-control" name="bed" id="bed-book-room"
+                                        placeholder="Nombre de lit si Albert Einstein sélectionée" data-rule="minlen:1"
+                                        value="1" readonly>
+                                    <div class="validate"></div>
+                                </div>
+
                             </div>
+
                             <div class="form-group mt-3">
                                 <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
                                 <div class="validate"></div>
