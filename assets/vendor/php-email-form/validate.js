@@ -83,6 +83,7 @@
     // Get the book form inputs
     const nameInput = document.getElementById('name-book-room');
     const emailInput = document.getElementById('email-book-room');
+    const phoneInput = document.getElementById('phone-book-room');
     const dateInput = document.getElementById('date-book-room');
     const timeInput = document.getElementById('time-book-room');
     const peopleInput = document.getElementById('people-book-room');
@@ -90,6 +91,10 @@
     // Validate each field for book form
     if (nameInput.value === '') {
       alert('Please enter your name.');
+      return false;
+    }
+    if (phoneInput.value === '') {
+      alert('Please enter your phone number.');
       return false;
     }
 
