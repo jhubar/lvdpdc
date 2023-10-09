@@ -202,17 +202,21 @@
                                     <div class="validate"></div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 form-group mt-3">
-                                    <input type="text" class="form-control" name="room" id="room-book-room" required
-                                        placeholder="Nom de la chambre" value="Atelier du peintre" readonly>
+                                    <select class="form-control" name="room" id="room-book-room" required>
+                                        <option value="" selected disabled>Sélectionnez le nom de la chambre</option>
+                                        <option value="Atelier du Peintre">Atelier du Peintre</option>
+                                    </select>
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 form-group mt-3">
+                                    <select class="form-control" name="room" id="bed-book-room" required>
+                                        <option value="" selected disabled>Nombre de lit</option>
+                                        <option value="1">1</option>
+                                    </select>
                                     <div class="validate"></div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6 form-group mt-3">
-                                    <input type="number" class="form-control" name="bed" id="bed-book-room"
-                                        placeholder="Nombre de lit si Albert Einstein sélectionée" data-rule="minlen:1"
-                                        value="1" readonly>
-                                    <div class="validate"></div>
-                                </div>
+
                             </div>
                             <div class="form-group mt-3">
                                 <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
