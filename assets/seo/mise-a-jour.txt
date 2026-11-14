@@ -1,0 +1,18 @@
+Tenir la fiche IA à jour — La Villa du Pré du Cerf
+
+Les assistants lisent trois endroits, qui doivent dire la même chose :
+1. Le texte visible (section « Dormir à Spa » et la page de la chambre)
+2. Le bloc JSON-LD dans le head de la page
+3. Le fichier llms.txt à la racine du site
+
+Quand un prix, un texte ou une chambre change :
+1. Modifier la page concernée.
+2. Reprendre la même information dans la section « Dormir à Spa » de index.html, en français et en anglais (assets/js/villa.js).
+3. Modifier le JSON-LD de l'accueil et, s'il y a lieu, celui de la page chambre.
+4. Modifier llms.txt, y compris le résumé anglais.
+5. Mettre la date du jour dans sitemap.xml (lastmod).
+
+Ne pas décrire une chambre qui n'a pas encore de page.
+Le Café Cramique et le gîte Sous le Tilleul s'ajoutent quand leurs pages sont en ligne.
+
+Ce fichier et le dossier devis/ sont exclus dans robots.txt.

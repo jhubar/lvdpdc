@@ -1,1647 +1,665 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
+  <script>document.documentElement.classList.add("js")</script>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>La Villa du pré du Cerf</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="assets/favicon_io/site.webmanifest">
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Villa du Pré du Cerf | Maison d'hôtes à Spa</title>
+  <meta name="description" content="Maison d'hôtes à Spa, 3 Chemin de Frahinfaz. Trois chambres, petit-déjeuner compris : Albert Einstein, Atelier du Peintre et Golf Club. Réservation par le formulaire du site.">
+  <link rel="canonical" href="https://lavilladupreducerf.be/">
+  <link rel="alternate" type="text/plain" href="https://lavilladupreducerf.be/llms.txt" title="llms.txt">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_BE">
+  <meta property="og:site_name" content="La Villa du Pré du Cerf">
+  <meta property="og:title" content="La Villa du Pré du Cerf | Maison d'hôtes à Spa">
+  <meta property="og:description" content="Maison d'hôtes à Spa, 3 Chemin de Frahinfaz. Trois chambres, petit-déjeuner compris : Albert Einstein, Atelier du Peintre et Golf Club. Réservation par le formulaire du site.">
+  <meta property="og:url" content="https://lavilladupreducerf.be/">
+  <meta property="og:image" content="https://lavilladupreducerf.be/assets/img/cerf.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon_io/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="assets/favicon_io/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link href="assets/css/villa.css" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://lavilladupreducerf.be/#page",
+        "url": "https://lavilladupreducerf.be/",
+        "name": "La Villa du Pré du Cerf | Maison d'hôtes à Spa",
+        "dateModified": "2026-11-12",
+        "inLanguage": "fr-BE",
+        "about": { "@id": "https://lavilladupreducerf.be/#maison" }
+      },
+      {
+        "@type": "BedAndBreakfast",
+        "@id": "https://lavilladupreducerf.be/#maison",
+        "name": "La Villa du Pré du Cerf",
+        "url": "https://lavilladupreducerf.be/",
+        "image": "https://lavilladupreducerf.be/assets/img/cerf.jpeg",
+        "description": "Maison d'hôtes à Spa, trois chambres à thème, petit-déjeuner compris.",
+        "telephone": "+32476886820",
+        "email": "lvdpdc@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3 Chemin de Frahinfaz",
+          "postalCode": "4900",
+          "addressLocality": "Spa",
+          "addressRegion": "Liège",
+          "addressCountry": "BE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 50.49927,
+          "longitude": 5.87028
+        },
+        "containsPlace": [
+          {
+            "@type": "HotelRoom",
+            "name": "Albert Einstein",
+            "url": "https://lavilladupreducerf.be/albert-einstein.html",
+            "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
+            "offers": [
+              { "@type": "Offer", "price": "170", "priceCurrency": "EUR", "description": "2 personnes, petit-déjeuner compris, hors événements spéciaux" },
+              { "@type": "Offer", "price": "225", "priceCurrency": "EUR", "description": "3 personnes, petit-déjeuner compris, hors événements spéciaux" },
+              { "@type": "Offer", "price": "300", "priceCurrency": "EUR", "description": "4 personnes, petit-déjeuner compris, hors événements spéciaux" }
+            ]
+          },
+          {
+            "@type": "HotelRoom",
+            "name": "Atelier du Peintre",
+            "url": "https://lavilladupreducerf.be/atelier-du-peintre.html",
+            "offers": [
+              { "@type": "Offer", "price": "165", "priceCurrency": "EUR", "description": "La nuit, petit-déjeuner compris, hors événements spéciaux" }
+            ]
+          },
+          {
+            "@type": "HotelRoom",
+            "name": "Golf Club",
+            "url": "https://lavilladupreducerf.be/golf-club.html",
+            "offers": [
+              { "@type": "Offer", "price": "175", "priceCurrency": "EUR", "description": "La nuit, petit-déjeuner compris, hors événements spéciaux" }
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://lavilladupreducerf.be/#questions",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Où se trouve La Villa du Pré du Cerf ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Au 3 Chemin de Frahinfaz, 4900 Spa, Belgique, près des Thermes de Spa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quelles chambres peut-on réserver ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trois chambres : Albert Einstein (170 €, 225 € ou 300 € selon le nombre de personnes), Atelier du Peintre (165 €) et Golf Club (175 €). Petit-déjeuner compris, hors événements spéciaux."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Le petit-déjeuner est-il compris ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Le petit-déjeuner est compris dans les prix affichés des trois chambres."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment réserver une chambre ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Par le formulaire du site lavilladupreducerf.be. La maison confirme ensuite. Téléphone : +32 476 88 68 20. Email : lvdpdc@gmail.com."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
-
 <body>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span>+32 0476 88 68 20</span></i>
-        <!-- <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i> -->
+  <div class="topbar">
+    <div class="wrap">
+      <a href="tel:+32476886820">+32 476 88 68 20</a>
+      <div class="langs">
+        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
-
-      <!-- <div class="languages d-none d-md-flex align-items-center">
-        <ul>
-
-          <li><a id="en" class="translate">EN</a></li>
-          <li><a id="fr" class="translate">FR</a></li>
-        </ul>
-      </div> -->
     </div>
   </div>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-cente">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-
-      <h1 class="logo me-auto me-lg-0"> <a href="index.html">
-          <img src="assets/img/lvdpc.png" alt="LVDPDC Logo" style="max-height: 60px; margin-left: 60px;">
-        </a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-
-          <li><a class="nav-link scrollto active lang" key="home" href="#hero">Acceuil</a></li>
-          <li><a class="nav-link scrollto lang" key="rooms" href="#events">Chambre</a></li>
-          <li><a class="nav-link scrollto lang" key="about" href="#restaurant">Restaurants</a></li>
-          <li><a class="nav-link scrollto lang" key="about" href="#loisir">Loisirs & détente</a></li>
-          <li><a class="nav-link scrollto lang" key="gallery" href="#gallery">Galeries</a></li>
-          <li><a class="nav-link scrollto lang" key="to_discover" href="#testimonials">Avis</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-
-
-
-          <li class="d-lg-none align-items-center"><a id="en" class="translate">EN</a></li>
-          <li class="d-lg-none align-items-center"><a id="fr" class="translate">FR</a></li>
-        </ul>
-        <!-- Ajoutez la section des langues ici -->
-
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex lang" key="reservation_2">Réserver une
-        Chambre</a>
-
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="#hero"><img src="assets/img/lvdpc.png" alt="La Villa du Pré du Cerf"></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu"><span></span></button>
+      <nav class="nav">
+        <a href="#hero" data-i18n="home">Accueil</a>
+        <a href="#events" data-i18n="rooms">Chambres</a>
+        <a href="#restaurant" data-i18n="restaurants">Restaurants</a>
+        <a href="#loisir" data-i18n="leisure">Loisirs &amp; détente</a>
+        <a href="#gallery" data-i18n="gallery">Galerie</a>
+        <a href="#testimonials" data-i18n="reviews">Avis</a>
+        <a href="#contact" data-i18n="contact">Contact</a>
+        <a class="book-link" href="#book-a-table" data-i18n="book">Réserver une chambre</a>
+      </nav>
+      <a class="book-link" href="#book-a-table" data-i18n="book">Réserver une chambre</a>
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
-      <div class="row">
-        <div class="col-lg-8 lang">
-          <h1>
-            <div class="lang" key="welcome"> Bienvenue à </div> <span key="welcome1">La Villa du Pré du Cerf</span>
-          </h1>
-          <!-- <h2 id="#welcome"></h2> -->
-
-          <div class="btns">
-            <a href="#events" class="btn-menu animated fadeInUp scrollto lang" key="reservation_3">Nos chambres</a>
-            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto lang" key="reservation_4">Réserver</a>
-          </div>
+  <section class="hero" id="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal reveal-zoom">
+        <h1><span data-i18n="welcome">Bienvenue à</span> <span data-i18n="welcome1">La Villa du Pré du Cerf</span></h1>
+        <div class="hero-actions">
+          <a class="btn" href="#events" data-i18n="our_rooms">Nos chambres</a>
+          <a class="btn btn-solid" href="#book-a-table" data-i18n="book_short">Réserver</a>
         </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in"
-          data-aos-delay="200">
-          <a href="https://www.youtube.com/watch?v=HsHaMO-mRSE" class="glightbox play-btn"></a>
-        </div>
-
       </div>
+      <a class="play reveal reveal-zoom" href="https://www.youtube.com/watch?v=HsHaMO-mRSE" target="_blank" rel="noopener">Voir la vidéo</a>
     </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <div class="about-img">
-              <img src="assets/img/cerf.jpeg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3 class="lang" key="description_lvd_title"> Bienvenue à notre maison d'hôte unique à Spa, en Belgique !
-            </h3>
-            <p class="fst-italic lang" key="description_lvd_1">
-              Chez nous, l'expérience de séjour ne se limite pas à un simple hébergement, mais offre une immersion
-              totale dans un univers de charme et de raffinement. Avec nos trois chambres à thème exquises, nous avons
-              créé un espace où l'imagination se mêle à l'élégance, offrant à nos clients une expérience inoubliable.
-              Chaque chambre a été conçue avec :
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle "></i>
-                <div class="lang" key="description_lvd_2"> Une attention minutieuse aux
-                  détails</div>
-              </li>
-              <li><i class="bi bi-check-circle"></i>
-                <div class="lang" key="description_lvd_3">Offre un équilibre harmonieux entre
-                  confort et style.</div>
-              </li>
-              <li><i class="bi bi-check-circle"></i>
-                <div class="lang" key="description_lvd_4">Un style et ambiance distinctive.</div>
-              </li>
-            </ul>
-            <p class="lang" key="description_lvd_5">
-              Situé dans la magnifique ville de Spa, réputée pour ses sources thermales, notre hôtel offre un refuge
-              paisible où vous pourrez vous ressourcer et vous détendre.
-              Que vous soyez à la recherche d'une escapade romantique, d'un moment de tranquillité ou d'une aventure
-              passionnante, notre emplacement privilégié vous permettra de profiter pleinement de tout ce que Spa a à
-              offrir.
-
-            </p>
-          </div>
+  </section>
+  <main>
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div class="reveal">
+          <h2 data-i18n="about_title">Bienvenue à notre maison d'hôte unique à Spa, en Belgique !</h2>
+          <p data-i18n="about_1">Chez nous, l'expérience de séjour ne se limite pas à un simple hébergement, mais offre une immersion totale dans un univers de charme et de raffinement. Avec nos trois chambres à thème exquises, nous avons créé un espace où l'imagination se mêle à l'élégance, offrant à nos clients une expérience inoubliable. Chaque chambre a été conçue avec :</p>
+          <ul class="checks">
+            <li data-i18n="about_2">Une attention minutieuse aux détails</li>
+            <li data-i18n="about_3">Un équilibre harmonieux entre confort et style</li>
+            <li data-i18n="about_4">Un style et une ambiance distinctifs</li>
+          </ul>
+          <p data-i18n="about_5">Située dans la magnifique ville de Spa, réputée pour ses sources thermales, notre maison d'hôtes offre un refuge paisible où vous pourrez vous ressourcer et vous détendre. Que vous soyez à la recherche d'une escapade romantique, d'un moment de tranquillité ou d'une aventure, notre emplacement vous permettra de profiter de tout ce que Spa a à offrir.</p>
         </div>
-
+        <div class="about-photo reveal reveal-zoom"><img src="assets/img/cerf.jpeg" alt="La Villa du Pré du Cerf, maison d'hôtes à Spa"></div>
       </div>
-    </section><!-- End About Section -->
-    <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>
-            <div class="lang" key="rooms">Chambre</div>
-
-          </h2>
-          <p class="lang" key="univers">Choississez votre univers</p>
-        </div>
-
-        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <a href="albert-einstein.html">
-                    <img src="assets/img/Chambre/albert/333079587.jpg" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Albert Einstein</h3>
-                  <div class="price">
-                    <p><span>170€</span> <i class="bi bi-person small-icon"></i><i class="bi bi-person small-icon"></i>
-                      / <span>225€</span> <i class="bi bi-person small-icon"></i><i
-                        class="bi bi-person small-icon"></i><i class="bi bi-person small-icon"></i> / <span>300€</span>
-                      <i class="bi bi-person small-icon"></i><i class="bi bi-person small-icon"></i><i
-                        class="bi bi-person small-icon"></i><i class="bi bi-person small-icon"></i>
-                    </p>
+    </section>
+    <section class="section section-alt" id="events">
+      <div class="wrap">
+        <p class="kicker reveal" data-i18n="rooms_kicker">Chambres</p>
+        <h2 class="headline reveal" data-i18n="rooms_title">Choisissez votre univers</h2>
+        <div class="slider reveal" data-slider>
+          <div class="slider-viewport">
+            <div class="slider-track">
+              <article class="slide">
+                <div class="room-slide">
+                  <a href="albert-einstein.html"><img src="assets/img/Chambre/albert/333079587.jpg" alt="Chambre Albert Einstein"></a>
+                  <div>
+                    <h3>Albert Einstein</h3>
+                    <p class="price">170 € <small>/ 2</small> · 225 € <small>/ 3</small> · 300 € <small>/ 4</small></p>
+                    <p class="note" data-i18n="breakfast">Petit-déjeuner compris</p>
+                    <p class="note" data-i18n="price_note">Prix hors événements spéciaux ou professionnels</p>
+                    <p data-i18n="einstein_lead">Un hommage inspirant à l'esprit révolutionnaire.</p>
+                    <ul class="checks">
+                      <li data-i18n="einstein_1">Décor élégant avec des références à ses découvertes.</li>
+                      <li data-i18n="einstein_2">Confort luxueux et ambiance propice à la réflexion.</li>
+                      <li data-i18n="einstein_3">Deux pièces et une douche à l'italienne.</li>
+                      <li data-i18n="einstein_4">Un lit de 160 cm et deux lits de 90 cm.</li>
+                    </ul>
+                    <p data-i18n="einstein_text">Vivez une expérience unique dans la chambre Albert Einstein, où le célèbre scientifique a séjourné au printemps 1932.</p>
+                    <button class="btn" type="button" data-calendar="https://calendar.google.com/calendar/embed?src=2iff5orohpup2r34vtn3u7of92o8siqe%40import.calendar.google.com&ctz=Europe%2FBrussels" data-i18n="see">Voir les disponibilités</button>
                   </div>
-                  <h5>*Petit déjeuner compris </h5>
-                  <h5>*Prix hors évènements spéciaux ou profesionnel</h5>
-                  <p class="fst-italic lang" key="rooms_name_1">
-                    Un hommage inspirant à l'esprit révolutionnaire.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i>
-                      <div class="lang" key="description_room_1_boulet_1">Décor élégant avec des références à ses
-                        découvertes.</div>
-                    </li>
-                    <li><i class="bi bi-check-circled"></i>
-                      <div class="lang" key="description_room_1_boulet_2">Confort luxueux et ambiance propice à la
-                        réflexion.</div>
-                    </li>
-                    <li><i class="bi bi-check-circled"></i>
-                      <div class="lang" key="description_room_1_boulet_3">2 Chambres et une salle de douche
-                        lavabo/douche
-                        italienne.</div>
-                    </li>
-                    <li><i class="bi bi-check-circled"></i>
-                      <div class="lang" key="description_room_1_boulet_4">un lit 160cm et 2 lits 90cm</div>
-                    </li>
-                  </ul>
-                  <p class="lang" key="description_room_1">
-                    Vivez une expérience unique dans la chambre Albert Einstein, où le célèbre scientifique a séjourné
-                    au printemps 1932.
-                  </p>
-                  <h4 id="calendarButtonAlbertEinstein">Voir les
-                    disponibilités</h4>
-
                 </div>
-              </div>
+              </article>
+              <article class="slide">
+                <div class="room-slide">
+                  <a href="atelier-du-peintre.html"><img src="assets/img/Chambre/atelier_du_peintre/272440487.jpg" alt="Chambre Atelier du Peintre"></a>
+                  <div>
+                    <h3>Atelier du Peintre</h3>
+                    <p class="price">165 €</p>
+                    <p class="note" data-i18n="breakfast">Petit-déjeuner compris</p>
+                    <p class="note" data-i18n="price_note">Prix hors événements spéciaux ou professionnels</p>
+                    <p data-i18n="atelier_lead">La chambre Atelier du Peintre : une invitation artistique au confort supérieur.</p>
+                    <ul class="checks">
+                      <li data-i18n="atelier_1">Décor inspiré d'un atelier d'artiste, favorisant la créativité.</li>
+                      <li data-i18n="atelier_2">Lit king-size de 180 cm pour des nuits reposantes.</li>
+                      <li data-i18n="atelier_3">Une chambre et une douche à l'italienne.</li>
+                    </ul>
+                    <p data-i18n="atelier_text">Découvrez un refuge artistique et luxueux dans la chambre Atelier du Peintre, où confort et créativité se marient harmonieusement.</p>
+                    <button class="btn" type="button" data-calendar="https://calendar.google.com/calendar/embed?src=g9q9p46jn812804n5efffn7lspbhvqtf%40import.calendar.google.com&ctz=Europe%2FBrussels" data-i18n="see">Voir les disponibilités</button>
+                  </div>
+                </div>
+              </article>
+              <article class="slide">
+                <div class="room-slide">
+                  <a href="golf-club.html"><img src="assets/img/Chambre/golf_club/273658536.jpg" alt="Chambre Golf Club"></a>
+                  <div>
+                    <h3>Golf Club</h3>
+                    <p class="price">175 €</p>
+                    <p class="note" data-i18n="breakfast">Petit-déjeuner compris</p>
+                    <p class="note" data-i18n="price_note">Prix hors événements spéciaux ou professionnels</p>
+                    <p data-i18n="golf_lead">Un havre de détente pour les passionnés de golf.</p>
+                    <ul class="checks">
+                      <li data-i18n="golf_1">Décor aux accents de golf et balcon avec vue sur le pré du Cerf.</li>
+                      <li data-i18n="golf_2">Lit king-size de 180 cm et douche à l'italienne, idéale après une journée sur le green.</li>
+                      <li data-i18n="golf_3">Une chambre pour accueillir les golfeurs en quête de repos.</li>
+                    </ul>
+                    <p data-i18n="golf_text">Plongez dans l'atmosphère de la chambre Golf Club, idéale pour se reposer après une journée sur le parcours.</p>
+                    <button class="btn" type="button" data-calendar="https://calendar.google.com/calendar/embed?src=rggp6hbop7upusqkccrc6s33q4s6f6ac%40import.calendar.google.com&ctz=Europe%2FBrussels" data-i18n="see">Voir les disponibilités</button>
+                  </div>
+                </div>
+              </article>
             </div>
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class=" col-lg-6">
-
-                  <a href="atelier-du-peintre.html">
-                    <img src=" assets/img/Chambre/atelier_du_peintre/272440487.jpg" alt="" class="img-fluid">
-                  </a>
-                </div>
-
-
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Atelier du peintre</h3>
-                  <div class="price">
-                    <p><span>165€</span></p>
-                  </div>
-                  <h5>*Prix hors évènements spéciaux ou profesionnel</h5>
-                  <h5>*Petit déjeuner compris </h5>
-                  <p class="fst-italic lang" key="rooms_name_2">
-                    La chambre "Atelier du Peintre" : une invitation artistique au confort supérieur.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i>
-                      <div class="lang" key="description_room_2_boulet_1"> Décor inspiré d'un atelier d'artiste,
-                        favorisant la
-                        créativité.</div>
-                    </li>
-                    <li><i class="bi bi-check-circled"></i>
-                      <div class="lang" key="description_room_2_boulet_2">Lit king-size de 180 cm pour des nuits
-                        reposantes.</div>
-                    </li>
-                    <li><i class="bi bi-check-circled"></i>
-                      <div class="lang" key="description_room_2_boulet_3">Une chambre pour plus d'espace et
-                        d'intimité et salle une douche ( lavabo/douche
-                        italienne).</div>
-                    </li>
-                  </ul>
-                  <p class="lang" key="description_room_2">
-                    Découvrez un refuge artistique et luxueux dans la chambre "Atelier du Peintre", offrant une
-                    expérience unique où confort et créativité se marient harmonieusement.
-                  </p>
-                  <h4 id="calendarButtonAtelierduPeintre">Voir les
-                    disponibilités</h4>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <a href="golf-club.html">
-                    <img src="assets/img/Chambre/golf_club/273658536.jpg" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Golf Club</h3>
-                  <div class="price">
-                    <p><span>175€</span></p>
-                  </div>
-                  <h5>*Prix hors évènements spéciaux ou profesionnel</h5>
-                  <h5>*Petit déjeuner compris </h5>
-                  <p class="fst-italic">
-                    Un havre de détente pour les passionnés de golf.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i>
-                      <div class="lang" key="description_room_3_boulet_1">Décor élégant aux accents de golf, créant
-                        une
-                        ambiance
-                        sportive équipée d'un balcon avec vue sur le pré du Cerf.</div>
-                    </li>
-                    <li><i class="bi bi-check-circled"></i>
-                      <div class="lang" key="description_room_3_boulet_2">Lit king-size de 180 cm et salle une douche (
-                        lavabo/douche
-                        italienne)
-                        idéale
-                        après une
-                        journée sur le green.</div>
-                    </li>
-                    <li><i class="bi bi-check-circled"></i>
-                      <div class="lang" key="description_room_3_boulet_3">Une chambre pour accueillir
-                        confortablement
-                        les golfeurs
-                        en quête de repos.</div>
-                    </li>
-                  </ul>
-                  <p class="lang" key="description_room_3">
-                    Plongez dans l'atmosphère exclusive de la chambre "Golf Club" et laissez-vous séduire par son
-                    ambiance raffinée, idéale pour les amateurs de golf en quête de repos après une journée sur le
-                    parcours.
-
-                  </p>
-
-                  <h4 id="calendarButtonGolfClub">Voir les
-                    disponibilités.</h4>
-
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-
-
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-
       </div>
-    </section><!-- End Events Section -->
-
-    <!-- ======= Book A Room Section ======= -->
-    <section id="book-a-table" class="book-a-table">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 class="lang" key="reservation_1">Réservation</h2>
-          <p class="lang" key="reservation_2">Réserver une chambre</p>
-
-
+    </section>
+    <section class="section" id="book-a-table">
+      <div class="wrap book">
+        <div class="book-intro reveal">
+          <p class="kicker" data-i18n="book_kicker">Réservation</p>
+          <h2 class="headline" data-i18n="book">Réserver une chambre</h2>
+          <p data-i18n="book_lead">Indiquez vos dates. La maison confirme ensuite.</p>
+          <ul class="checks">
+            <li data-i18n="breakfast">Petit-déjeuner compris</li>
+            <li data-i18n="price_note">Prix hors événements spéciaux ou professionnels</li>
+          </ul>
+          <p class="book-phone"><a href="tel:+32476886820">+32 476 88 68 20</a></p>
         </div>
-
-        <form id="book-form" action="https://formspree.io/f/xqkojnqe" method="post" role="form" class="php-email-form"
-          data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name-book-room" placeholder="Votre nom"
-                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+        <form class="book-card reveal" action="https://formspree.io/f/xqkojnqe" method="post">
+          <div class="book-fields">
+            <div class="field">
+              <label for="book-name" data-i18n="label_name">Nom</label>
+              <input id="book-name" name="name" required autocomplete="name" data-i18n-placeholder="ph_name" placeholder="Votre nom">
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email-book-room" placeholder="Votre mail"
-                data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
+            <div class="field">
+              <label for="book-email" data-i18n="label_email">Email</label>
+              <input id="book-email" name="email" type="email" required autocomplete="email" data-i18n-placeholder="ph_email" placeholder="Votre mail">
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="phone" id="phone-book-room" placeholder="Votre numéro"
-                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+            <div class="field">
+              <label for="book-phone" data-i18n="label_phone">Téléphone</label>
+              <input id="book-phone" name="phone" type="tel" required autocomplete="tel" data-i18n-placeholder="ph_phone" placeholder="Votre numéro">
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" name="date" class="form-control" id="date-book-room" placeholder="Date"
-                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+            <div class="field">
+              <label for="book-people" data-i18n="label_people">Personnes</label>
+              <input id="book-people" name="people" type="number" min="1" inputmode="numeric" data-i18n-placeholder="ph_people" placeholder="Nombre de personnes">
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" class="form-control" name="time" id="time-book-room" placeholder="Durée"
-                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+            <div class="field">
+              <label for="book-date" data-i18n="label_date">Date d'arrivée</label>
+              <input id="book-date" name="date" type="date" required>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="number" class="form-control" name="people" id="people-book-room" placeholder="# personnes"
-                data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-6 col-md-6 form-group mt-3">
-              <select class="form-control" name="room" id="room-book-room" required>
-                <option value="" selected disabled>Sélectionnez le nom de la chambre</option>
-                <option value="Albert Einstein">Albert Einstein</option>
-                <option value="Atelier du Peintre">Atelier du Peintre</option>
-                <option value="Golf Club">Golf Club</option>
-              </select>
-              <div class="validate"></div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 form-group mt-3">
-              <input type="number" class="form-control" name="bed" id="bed-book-room"
-                placeholder="Nombre de lit si Albert Einstein sélectionée" data-rule="minlen:1">
-              <div class="validate"></div>
+            <div class="field">
+              <label for="book-time" data-i18n="label_time">Nuits</label>
+              <input id="book-time" name="time" type="number" min="1" inputmode="numeric">
             </div>
           </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-            <div class="validate"></div>
+          <fieldset class="room-picks">
+            <legend data-i18n="ph_room">Sélectionnez la chambre</legend>
+            <label class="room-pick">
+              <input type="radio" name="room" value="Albert Einstein" required>
+              <span>Albert Einstein</span>
+              <small>170 €</small>
+            </label>
+            <label class="room-pick">
+              <input type="radio" name="room" value="Atelier du Peintre">
+              <span>Atelier du Peintre</span>
+              <small>165 €</small>
+            </label>
+            <label class="room-pick">
+              <input type="radio" name="room" value="Golf Club">
+              <span>Golf Club</span>
+              <small>175 €</small>
+            </label>
+          </fieldset>
+          <div class="field bed-field">
+            <label for="book-bed" data-i18n="label_bed">Nombre de lits</label>
+            <select id="book-bed" name="bed">
+              <option value="" selected disabled data-i18n="ph_bed">Nombre de lits si Albert Einstein</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
           </div>
-          <div class="mb-3">
-            <div id="loading" class="loading" style="display: none;">Loading</div>
-            <!-- <div id="error-message" class="error-message" style="display: none;"></div>
-            <div id="success-message" class="sent-message" style="display: none;">Your booking request was sent. We will
-              call back or send an Email to confirm your reservation. Thank you!</div> -->
+          <div class="field">
+            <label for="book-message" data-i18n="label_message">Message</label>
+            <textarea id="book-message" name="message" data-i18n-placeholder="ph_message" placeholder="Message"></textarea>
           </div>
-          <div class="text-center"><button type="submit"><i class="lang" key="reservation_2">Réserver une
-                chambre</i></button></div>
+          <button class="btn btn-solid" type="submit" data-i18n="book">Réserver une chambre</button>
         </form>
-
-
-    </section>
-
-    <!-- <section id="why-us" class="why-us">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Why Us</h2>
-          <p>Why Choose Our Restaurant</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <span>01</span>
-              <h4>Lorem Ipsum</h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="200">
-              <span>02</span>
-              <h4>Repellat Nihil</h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
-              <span>03</span>
-              <h4> Ad ad velit qui</h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section>End Why Us Section -->
-
-    <!-- ======= Thing todo Section ======= -->
-    <section id="restaurant" class="menu section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>
-            <div class="lang" key="restaurant">Restaurants</div>
-          </h2>
-          <p class="lang" key="activity_1">Nos bonnes adresses</p>
-        </div>
-
-
-        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-6 menu-item filter-restaurant">
-            <img src="assets/img/restaurant/air-famille.png" class="menu-img" alt="">
-
-            <div class="menu-content">
-
-              <a href="https://www.unairdefamille.be">Un Air de Famille à Theux</a><span>Theux</span>
-            </div>
-            <div class="menu-ingredients">
-              <div class="lang" key="activity-1">
-                Avec son décor soigné, son design élégant et ses superbes pierres apparentes, le restaurant Un air de
-                famille vous
-                accueille pour une savoureuse parenthèse culinaire, simple et généreuse.
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- <div class="col-lg-6 menu-item filter-restaurant">
-            <img src="assets/img/restaurant/la-belle_epoque.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.la-belle-epoque-spa.be">La Belle Epoque</a><span>SPA</span>
-            </div>
-            <div class="menu-ingredients">
-              Exellente cuisine de brasserie dans un cadre art déco.
-            </div>
-          </div> -->
-
-          <div class="col-lg-6 menu-item filter-restaurant">
-            <img src="assets/img/restaurant/letonnelet.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.le-tonnelet-restaurant-spa.be/">Le tonnelet</a><span>SPA</span>
-            </div>
-            <div class="menu-ingredients">
-              Exellente cuisine de brasserie située dans les magnifiques rotondes de la source du Tonnelet.
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-restaurant">
-            <img src="assets/img/restaurant/pont_de_belleheid.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.pont-de-belleheid.be/">Pont de balleheid</a><span>SPA</span>
-            </div>
-            <div class="menu-ingredients">
-              Belle brasserie dans un chalet chaleureux , l’endroit idéal après votre balade en forêt !
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-restaurant">
-            <img src="assets/img/restaurant/Logo_COTE PROCHE.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.coteproche.com/menu">Côté proche</a><span>Spa</span>
-            </div>
-            <div class="menu-ingredients">
-              Cuisine libre, instinctive et créative dont les jeunes patrons privilégient le circuit cours
-            </div>
-          </div>
-
-
-          <div class="col-lg-6 menu-item filter-restaurant">
-            <img src="assets/img/restaurant/logo-big.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.linea.restaurant/">Le linéa</a><span>SPA</span>
-            </div>
-            <div class="menu-ingredients">
-              Excellente cuisine aux inspirations italiennes dans un bâtiment respirant l'âme de son histoire.
-            </div>
-          </div>
-          <div class="col-lg-6 menu-item filter-restaurant">
-            <img src="assets/img/restaurant/maison-trait.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.artdevivre.be/">Art de Vivre</a><span>SPA</span>
-            </div>
-            <div class="menu-ingredients">
-              Dans une très belle bâtisse du 19e siècle. Une cuisine raffinée où vous serez accueillis par Jean-François
-              et son équipe.
-            </div>
-          </div>
-          <div class="col-lg-6 menu-item filter-restaurant">
-            <img src="assets/img/legrandmaur.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.artdevivre.be/">Le grand Maur</a><span>SPA</span>
-            </div>
-            <div class="menu-ingredients">
-              Délicieuse cuisine régionale. La patronne, excellente sommelière, vous ravira avec ses conseils avisés. Le
-              tout dans le cadre d'une ancienne villa Spadoise.
-            </div>
-          </div>
-          <!-- <div class="col-lg-6 menu-item filter-specialty">
-            <img src="" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="">Pathé Verviers</a><span>SPA</span>
-            </div>
-            <div class="menu-ingredients">
-              Pour les passionnés de golf
-            </div>
-          </div> -->
-
-
-
-
-        </div>
-
-      </div>
-    </section><!-- End Menu Section -->
-    <!-- Ballade -->
-    <section id="loisir" class="menu section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>
-            <div class="lang" key="restaurant">Loisirs & Détente</div>
-          </h2>
-          <p class="lang" key="activity_1">Balade</p>
-        </div>
-
-
-        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/restaurant/565357.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.visitspa-hautesfagnes.be/se-balader/a-pied">Promenades balisées à
-                Spa</a><span>Spa</span>
-            </div>
-            <div class="menu-ingredients">
-              De tres belle promenade à faire en famille
-            </div>
-          </div>
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/restaurant/565357.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.sitheux.be/promener/">Promenades balisées à
-                Theux</a><span>Theux</span>
-            </div>
-            <div class="menu-ingredients">
-              De très belles promenades à faire en famille
-            </div>
-          </div>
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/restaurant/565357.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.tourismejalhaysart.be/catpromenade/promenades-balisees/">Promenades balisées à
-                Jalhay</a><span>Jalhay</span>
-            </div>
-            <div class="menu-ingredients">
-              De tres belle promenade à faire en famille
-            </div>
-          </div>
-        </div>
     </section>
-    <!-- Activité -->
-    <section id="bien_etre" class="menu section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>
-            <div class="lang" key="restaurant">Loisirs & Détente</div>
-          </h2>
-          <p class="lang" key="activity_1">Activité</p>
-        </div>
-
-
-        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-
-
-
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/restaurant/Logo_Circuit_de_Spa_Francorchamps.svg.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.spa-francorchamps.be/">Spa Francorchamps</a><span>Francorchamps</span>
+    <section class="section section-alt" id="restaurant">
+      <div class="wrap">
+        <p class="kicker reveal" data-i18n="places_kicker">Restaurants</p>
+        <h2 class="headline reveal" data-i18n="places_title">Nos bonnes adresses</h2>
+        <div class="cards places">
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/air-famille.png" alt="">
+            <div>
+              <p class="where">Theux</p>
+              <h3><a href="https://www.unairdefamille.be">Un Air de Famille à Theux</a></h3>
+              <p>Avec son décor soigné, son design élégant et ses superbes pierres apparentes, le restaurant Un air de famille vous accueille pour une savoureuse parenthèse culinaire, simple et généreuse.</p>
             </div>
-            <div class="menu-ingredients">
-              Le circuit le plus mythique du monde
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/letonnelet.png" alt="La rotonde du Tonnelet">
+            <div>
+              <p class="where">Spa</p>
+              <h3><a href="https://www.le-tonnelet-restaurant-spa.be/">Le tonnelet</a></h3>
+              <p>Excellente cuisine de brasserie située dans les magnifiques rotondes de la source du Tonnelet.</p>
             </div>
-          </div>
-
-
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/restaurant/railbike-hautes-fagnes.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://www.railbike.be/fr/">Parc du Railbike</a><span>Hautes Fagnes</span>
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/pont_de_belleheid.png" alt="">
+            <div>
+              <p class="where">Spa</p>
+              <h3><a href="https://www.pont-de-belleheid.be/">Pont de balleheid</a></h3>
+              <p>Belle brasserie dans un chalet chaleureux, l'endroit idéal après votre balade en forêt.</p>
             </div>
-            <!-- <div class="menu-ingredients">
-              Fresh spinach, crisp romaine, tomatoes, and Greek olives
-            </div> -->
-          </div>
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/restaurant/rgcf_logo2.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="http://golfdespa.be">Golf de spa</a><span>SPA</span>
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/Logo_COTE PROCHE.png" alt="">
+            <div>
+              <p class="where">Spa</p>
+              <h3><a href="https://www.coteproche.com/menu">Côté proche</a></h3>
+              <p>Cuisine libre, instinctive et créative, dont les jeunes patrons privilégient le circuit court.</p>
             </div>
-            <div class="menu-ingredients">
-              Pour les passionnés de golf
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/logo-big.png" alt="">
+            <div>
+              <p class="where">Spa</p>
+              <h3><a href="https://www.linea.restaurant/">Le linéa</a></h3>
+              <p>Excellente cuisine aux inspirations italiennes dans un bâtiment respirant l'âme de son histoire.</p>
             </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/ours.jpeg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="https://forestia.be/">Forestia</a><span>Theux</span>
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/maison-trait.jpg" alt="La maison Art de Vivre">
+            <div>
+              <p class="where">Spa</p>
+              <h3><a href="https://www.artdevivre.be/">Art de Vivre</a></h3>
+              <p>Dans une très belle bâtisse du 19e siècle. Une cuisine raffinée où vous serez accueillis par Jean-François et son équipe.</p>
             </div>
-            <div class="menu-ingredients">
-
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/legrandmaur.png" alt="">
+            <div>
+              <p class="where">Spa</p>
+              <h3><a href="https://www.artdevivre.be/">Le grand Maur</a></h3>
+              <p>Délicieuse cuisine régionale. La patronne, excellente sommelière, vous ravira avec ses conseils avisés. Le tout dans le cadre d'une ancienne villa spadoise.</p>
             </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/grotte.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a
-                href="https://www.aywaille.be/fr/loisirs/tourisme/aywaille-tourisme/sites-et-attractions-touristiques/grotte-de-remouchamps">Les
-                grottes de Remouchamps</a><span>Remouchamps</span>
-            </div>
-            <div class="menu-ingredients">
-
-            </div>
-          </div>
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/monde-sauvage-logo.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="http://www.mondesauvage.be/">Monde sauvage</a><span>Aywaille</span>
-            </div>
-            <div class="menu-ingredients">
-
-            </div>
-          </div>
-
-
-
-
+          </article>
         </div>
       </div>
     </section>
-
-    <!-- ======= Specials Section ======= -->
-    <!-- <section id="specials" class="specials">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>
-            <div class="lang" key="news">Quoi de neuf </div>
-          </h2>
-          <p class="lang" key="news_1">Nos dernier post</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Franche foire</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Francofolie</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Les Cepes de Bordeaux</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Grand Prix</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Le brame du cerf</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>La franche foire</h3>
-                    <p class="fst-italic">Oyez, Oyez, Bonnes Gens !.</p>
-                    <p>
-                      Aux jours dix-neuvième et vingtième du mois d’aoust de l’an de grâce deux mil vingt-trois,
-                      manants, artisans et marchands du Païs de Franchimont tiendront Franche-Foire en leur castel.
-                    </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/franchefoire.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Les Cepes de Bordeaux de nos foret</h3>
-                    <p class="fst-italic">Découvrez les délicieux champignons "Les cepes de Bordeaux" des bois de Spa,
-                      une véritable pépite culinaire.</p>
-                    <p>Leur saveur unique et leur rareté en font un trésor gastronomique à ne pas manquer. Préparez-vous
-                      à éveiller vos papilles avec ces champignons raffinés, récoltés dans un cadre naturel d'exception.
-                    </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-6.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-3">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Les cepes de Bordeaux de nos foret</h3>
-                    <p class="fst-italic">Découvrez les délicieux champignons "Les cepes de Bordeaux" des bois de Spa,
-                      une véritable pépite culinaire.</p>
-                    <p>Leur saveur unique et leur rareté en font un trésor gastronomique à ne pas manquer. Préparez-vous
-                      à éveiller vos papilles avec ces champignons raffinés, récoltés dans un cadre naturel d'exception.
-                    </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-6.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-4">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Le Brame du Cerf : Plongez dans l'Enchantement de la Nature</h3>
-                    <p class="fst-italic"> Plongez dans l'expérience magique du brame du cerf, un spectacle sonore
-                      fascinant de la nature.</p>
-                    <p>
-                      Écoutez le puissant appel des cerfs à travers les bois, une symphonie captivante qui résonne dans
-                      l'air frais de l'automne. Laissez-vous envoûter par ce rituel ancestral et découvrez la beauté
-                      sauvage de la saison des amours chez ces majestueux animaux. Préparez-vous à être transporté dans
-                      un monde où la nature exprime toute sa grandeur et sa splendeur</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-5.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-5">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Le Brame du Cerf : Plongez dans l'Enchantement de la Nature</h3>
-                    <p class="fst-italic"> Plongez dans l'expérience magique du brame du cerf, un spectacle sonore
-                      fascinant de la nature.</p>
-                    <p>
-                      Écoutez le puissant appel des cerfs à travers les bois, une symphonie captivante qui résonne dans
-                      l'air frais de l'automne. Laissez-vous envoûter par ce rituel ancestral et découvrez la beauté
-                      sauvage de la saison des amours chez ces majestueux animaux. Préparez-vous à être transporté dans
-                      un monde où la nature exprime toute sa grandeur et sa splendeur</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-5.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
+    <section class="section" id="loisir">
+      <div class="wrap">
+        <p class="kicker reveal" data-i18n="walks_kicker">Loisirs et détente</p>
+        <h2 class="headline reveal" data-i18n="walks_title">Balade</h2>
+        <div class="cards places">
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/565357.png" alt="">
+            <div>
+              <p class="where">Spa</p>
+              <h3><a href="https://www.visitspa-hautesfagnes.be/se-balader/a-pied">Promenades balisées à Spa</a></h3>
+              <p>De belles promenades à faire en famille.</p>
             </div>
-          </div>
-        </div>
-
-      </div>
-    </section>End Specials Section -->
-
-
-    <!-- <section id="book" class="book-a-table">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2 class="lang" key="reservation_test">Disponibilités</h2>
-          <p class="lang" key="reservation_test">Voir les disponiblités</p>
-        </div>
-        <div class="text-center">
-            <button type="submit" id="calendarButton">
-              <i class="lang" key="reservation_2">Chambre</i>
-            </button>
-          </div>
-        <div class="col-lg-12 lang">
-          <div class="row">
-            <div class="btns">
-            <div class="col-lg-4 col-md-6 form-group">
-              <a id="calendarButtonAlbertEinstein" class="btn-menu animated fadeInUp scrollto lang"> Albert
-                Einstein</a>
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/565357.png" alt="">
+            <div>
+              <p class="where">Theux</p>
+              <h3><a href="https://www.sitheux.be/promener/">Promenades balisées à Theux</a></h3>
+              <p>De belles promenades à faire en famille.</p>
             </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <a id="calendarButtonAtelierduPeintre" class="btn-menu animated fadeInUp scrollto lang"> Atelier du
-                Peintre</a>
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/565357.png" alt="">
+            <div>
+              <p class="where">Jalhay</p>
+              <h3><a href="https://www.tourismejalhaysart.be/catpromenade/promenades-balisees/">Promenades balisées à Jalhay</a></h3>
+              <p>De belles promenades à faire en famille.</p>
             </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <a id="calendarButtonCafeCramique" class="btn-menu animated fadeInUp scrollto lang"> Café Cramique</a>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <a id="calendarButtonGolfClub" class="btn-menu animated fadeInUp scrollto lang"> Golf Club</a>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <a id="calendarButtonSousLeTilleul" class="btn-menu animated fadeInUp scrollto lang">Sous Le
-                Tilleul</a>
-
-              
-            </div>
-
-          </div>
+          </article>
         </div>
       </div>
-    </section> -->
-
-
-
-
-
-    <section id="gallery" class="gallery">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>
-            <div class="lang" key="gallery">Galerie</div>
-          </h2>
-          <p class="lang" key="gallery_2">Quelques photos</p>
+    </section>
+    <section class="section section-alt" id="bien_etre">
+      <div class="wrap">
+        <p class="kicker reveal" data-i18n="walks_kicker">Loisirs et détente</p>
+        <h2 class="headline reveal" data-i18n="activities_title">Activité</h2>
+        <div class="cards places">
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/Logo_Circuit_de_Spa_Francorchamps.svg.png" alt="">
+            <div>
+              <p class="where">Francorchamps</p>
+              <h3><a href="https://www.spa-francorchamps.be/">Spa Francorchamps</a></h3>
+              <p>Le circuit le plus mythique du monde.</p>
+            </div>
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/railbike-hautes-fagnes.png" alt="">
+            <div>
+              <p class="where">Hautes Fagnes</p>
+              <h3><a href="https://www.railbike.be/fr/">Parc du Railbike</a></h3>
+            </div>
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/restaurant/rgcf_logo2.png" alt="">
+            <div>
+              <p class="where">Spa</p>
+              <h3><a href="http://golfdespa.be">Golf de Spa</a></h3>
+              <p>Pour les passionnés de golf.</p>
+            </div>
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img class="is-photo" src="assets/img/ours.jpeg" alt="Un ours à Forestia">
+            <div>
+              <p class="where">Theux</p>
+              <h3><a href="https://forestia.be/">Forestia</a></h3>
+            </div>
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img class="is-photo" src="assets/img/grotte.jpg" alt="Les grottes de Remouchamps">
+            <div>
+              <p class="where">Remouchamps</p>
+              <h3><a href="https://www.aywaille.be/fr/loisirs/tourisme/aywaille-tourisme/sites-et-attractions-touristiques/grotte-de-remouchamps">Les grottes de Remouchamps</a></h3>
+            </div>
+          </article>
+          <article class="card reveal reveal-zoom">
+            <img src="assets/img/monde-sauvage-logo.jpg" alt="">
+            <div>
+              <p class="where">Aywaille</p>
+              <h3><a href="http://www.mondesauvage.be/">Monde sauvage</a></h3>
+            </div>
+          </article>
         </div>
       </div>
-
-      <!-- <div class=" container-fluid" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-0" id="galleryRow">
-         
+    </section>
+    <section id="gallery">
+      <div class="wrap section">
+        <p class="kicker reveal" data-i18n="gallery_kicker">Galerie</p>
+        <h2 class="headline reveal" data-i18n="gallery_title">Quelques photos</h2>
+      </div>
+      <div class="gallery"><button type="button" class="reveal" data-full="assets/img/gallery/325177850.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/325177850.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/325177846.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/325177846.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/272440438.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/272440438.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/267105799.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/267105799.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/325177860.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/325177860.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/273658896.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/273658896.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/285957417.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/285957417.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/325177840.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/325177840.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/325177841.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/325177841.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/272440487.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/272440487.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/325177857.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/325177857.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/285957338.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/285957338.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/325177861.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/325177861.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/325177862.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/325177862.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/272440451.jpeg" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/272440451.jpeg" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0348.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0348.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0361.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0361.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0349.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0349.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0362.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0362.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0365.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0365.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0238.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0238.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0210.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0210.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0303.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0303.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0302.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0302.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0328.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0328.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0314.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0314.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0338.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0338.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0304.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0304.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0306.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0306.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0307.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0307.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0281.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0281.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0295.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0295.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0294.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0294.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0321.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0321.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0320.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0320.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0269.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0269.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0334.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0334.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0330.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0330.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0318.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0318.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0251.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0251.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0292.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0292.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0320.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0320.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0319.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0319.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0327.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0327.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0284.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0284.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0369.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0369.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0355.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0355.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0221.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0221.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0234.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0234.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0340.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0340.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0354.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0354.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0342.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0342.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0223.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0223.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0343.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0343.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0353.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0353.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0227.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0227.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0350.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0350.JPG" alt="Photo de La Villa du Pré du Cerf"></button>
+<button type="button" class="reveal" data-full="assets/img/gallery/JLE_0230.JPG" data-alt="Photo de La Villa du Pré du Cerf"><img src="assets/img/gallery/JLE_0230.JPG" alt="Photo de La Villa du Pré du Cerf"></button></div>
+    </section>
+    <section class="section" id="chefs">
+      <div class="wrap">
+        <p class="kicker reveal" data-i18n="team_kicker">Équipe</p>
+        <h2 class="headline reveal" data-i18n="team_title">Notre équipe</h2>
+        <div class="team">
+          <figure class="member reveal reveal-zoom"><img src="assets/img/chefs/pascal.png" alt="Pascal"><figcaption><h3>Pascal</h3><p>Monsieur Pascal</p></figcaption></figure>
+          <figure class="member reveal reveal-zoom"><img src="assets/img/chefs/christine.png" alt="Christine"><figcaption><h3>Christine</h3><p>Madame la baronne</p></figcaption></figure>
+          <figure class="member reveal reveal-zoom"><img src="assets/img/chefs/chien.png" alt="La Chef"><figcaption><h3>La Chef</h3><p>Madame carpette</p></figcaption></figure>
         </div>
       </div>
-    </section> -->
-
-
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-0">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/325177850.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/325177850.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item room-item-albert-einstein">
-              <a href="assets/img/gallery/325177846.jpeg" class="gallery-lightbox room-lightbox-albert-einstein"
-                data-gall="gallery-item" data-gall="room-item-albert-einstein">
-                <img src="assets/img/gallery/325177846.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/272440438.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/272440438.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item room-item">
-              <a href="assets/img/gallery/267105799.jpeg" class="gallery-lightbox room-lightbox"
-                data-gall="gallery-item" data-gall="room-item">
-                <img src="assets/img/gallery/267105799.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/325177860.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/325177860.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/273658896.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/273658896.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/285957417.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/285957417.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/325177840.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/325177840.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/325177841.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/325177841.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/272440487.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/272440487.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/325177857.jpeg" class="gallery-lightbox room-lightbox-atelier"
-                data-gall="room-item-atelier" data-gall="gallery-item">
-                <img src="assets/img/gallery/325177857.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/285957338.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/285957338.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/325177861.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/325177861.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/325177862.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/325177862.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/272440451.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/272440451.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0348.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0348.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0361.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0361.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0349.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0349.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0362.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0362.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0365.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0365.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0238.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0238.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0210.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0210.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0303.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0303.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0302.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0302.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0328.JPG" class="gallery-lightbox room-lightbox-golf"
-                data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0328.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0314.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0314.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0338.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0338.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0304.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0304.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0306.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0306.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0307.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0307.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0281.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0281.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0295.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0295.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <!-- [ 
-              'JLE_0251.JPG', 'JLE_0292.JPG', 'JLE_0319.JPG', 'JLE_0327.JPG', 'JLE_0284.JPG', 'JLE_0369.JPG', 'JLE_0355.JPG', 
-              'JLE_0221.JPG', 'JLE_0234.JPG', 'JLE_0340.JPG', 'JLE_0354.JPG', 'JLE_0342.JPG', 'JLE_0223.JPG', 'JLE_0343.JPG',
-               'JLE_0353.JPG', 'JLE_0227.JPG', 'JLE_0346.JPG', 'JLE_0350.JPG', 'JLE_0230.JPG'] -->
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0294.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0294.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0321.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0321.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0320.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0320.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0269.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0269.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0334.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0334.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0330.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0330.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0318.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0318.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <!-- [ 
-               'JLE_0355.JPG', 
-              'JLE_0221.JPG', 'JLE_0234.JPG', 'JLE_0340.JPG', 'JLE_0354.JPG', 'JLE_0342.JPG', 'JLE_0223.JPG', 'JLE_0343.JPG',
-               'JLE_0353.JPG', 'JLE_0227.JPG', 'JLE_0346.JPG', 'JLE_0350.JPG', 'JLE_0230.JPG'] -->
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0251.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0251.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0292.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0292.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0320.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0320.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0319.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0319.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0327.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0327.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0284.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0284.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0369.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0369.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <!-- [ 
-                'JLE_0343.JPG','JLE_0353.JPG', 'JLE_0227.JPG', 'JLE_0346.JPG', 'JLE_0350.JPG', 'JLE_0230.JPG'] -->
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0355.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0355.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0221.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0221.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0234.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0234.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0340.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0340.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0354.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0354.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0342.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0342.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0223.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0223.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0343.JPG" class="gallery-lightbox room-lightbox-albert-einstein"
-                data-gall="gallery-item" data-gall="room-item-albert-einstein">
-                <img src="assets/img/gallery/JLE_0343.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0353.JPG" class="gallery-lightbox room-lightbox-atelier"
-                data-gall="gallery-item" data-gall="room-item-albert-atelier">
-                <img src="assets/img/gallery/JLE_0353.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0227.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0227.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0350.JPG" class="gallery-lightbox room-lightbox-atelier"
-                data-gall="gallery-item" data-gall="room-item-albert-atelier">
-                <img src="assets/img/gallery/JLE_0350.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/JLE_0230.JPG" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/JLE_0230.JPG" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
+    </section>
+    <section class="section section-alt" id="testimonials">
+      <div class="wrap">
+        <p class="kicker reveal" data-i18n="reviews_kicker">Commentaires clients</p>
+        <h2 class="headline reveal" data-i18n="reviews_title">Ce qu'on dit de nous</h2>
+        <div class="slider reveal" data-slider>
+          <div class="slider-viewport"><div class="slider-track">
+            <article class="slide"><blockquote class="quote"><h3>Magnifique séjour !</h3><p>Accueil convivial et chaleureux. Bâtiment magnifiquement rénové et décoré avec goût. Très belles pièces, tant les chambres que la pièce salon et la salle à manger. Calme et quiétude à deux pas du centre-ville. Petit déjeuner délicieux. Merci !</p><footer>Julien<span>1 nuit, mai 2023</span></footer></blockquote></article>
+            <article class="slide"><blockquote class="quote"><h3>Une adresse bucolique pleine de charmes</h3><p>Nous avions déjà séjourné dans cette maison d'hôtes. Le petit déjeuner est vraiment exceptionnel : varié, copieux et fait maison. Les propriétaires ont rénové cette belle bâtisse avec beaucoup de goût et dans les moindres détails. La villa est superbement bien placée, devant une immense prairie et des forêts, à deux pas des thermes. Et les propriétaires sont charmants.</p><footer>Pierre<span>2 nuits, mars 2023</span></footer></blockquote></article>
+            <article class="slide"><blockquote class="quote"><h3>Exceptionnel</h3><p>Magnifique lieu, magnifique environnement, magnifique hôte ! Que demander de plus.</p><footer>Nicole<span>1 nuit, octobre 2021</span></footer></blockquote></article>
+            <article class="slide"><blockquote class="quote"><h3>Atmosphère très agréable !</h3><p>Accueil chaleureux et très à l'écoute. Très bien décoré, avec le souci du détail. Séjour très agréable. Petit déjeuner au top.</p><footer>Adrien<span>1 nuit, juin 2023</span></footer></blockquote></article>
+            <article class="slide"><blockquote class="quote"><h3>Super séjour</h3><p>Super petit déjeuner. Gentillesse de l'hôte. Propreté. Calme.</p><footer>Marie<span>1 nuit, mai 2023</span></footer></blockquote></article>
+          </div></div>
         </div>
       </div>
-    </section><!-- End Gallery Section -->
-
-
-    <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>
-            <div class="lang" key="team">Equipe</div>
-          </h2>
-          <p div class="lang" key="team_1">
-            Notre équipe</p>
+    </section>
+    <section class="section" id="en-bref">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="kicker" data-i18n="fact_kicker">À savoir</p>
+          <h2 class="headline" data-i18n="fact_title">Dormir à Spa</h2>
+          <p class="lead" data-i18n="fact_lead">La Villa du Pré du Cerf est une maison d'hôtes au 3 Chemin de Frahinfaz, à 4900 Spa, près des Thermes. Trois chambres, petit-déjeuner compris. Les prix affichés en novembre 2026 sont hors événements spéciaux. La réservation se fait par le formulaire du site : la maison confirme ensuite.</p>
         </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <img src="assets/img/chefs/pascal.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Pascal</h4>
-                  <span>Monsieur Pascal</span>
-                </div>
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
-              </div>
+        <div class="facts reveal">
+          <a class="fact" href="albert-einstein.html">
+            <p class="fact-price" data-i18n="fact_r1_price">170 €, 225 € ou 300 €</p>
+            <h3>Albert Einstein</h3>
+            <p data-i18n="fact_r1">2, 3 ou 4 personnes. Deux pièces, douche à l'italienne, un lit de 160 cm et deux lits de 90 cm.</p>
+          </a>
+          <a class="fact" href="atelier-du-peintre.html">
+            <p class="fact-price" data-i18n="fact_r2_price">165 €</p>
+            <h3>Atelier du Peintre</h3>
+            <p data-i18n="fact_r2">Lit de 180 cm et douche à l'italienne.</p>
+          </a>
+          <a class="fact" href="golf-club.html">
+            <p class="fact-price" data-i18n="fact_r3_price">175 €</p>
+            <h3>Golf Club</h3>
+            <p data-i18n="fact_r3">Lit de 180 cm, douche à l'italienne et balcon avec vue sur le pré du Cerf.</p>
+          </a>
+        </div>
+        <div class="faq reveal">
+          <h3 data-i18n="faq_q1">Où se trouve La Villa du Pré du Cerf ?</h3>
+          <p data-i18n="faq_a1">Au 3 Chemin de Frahinfaz, 4900 Spa, Belgique, près des Thermes de Spa.</p>
+          <h3 data-i18n="faq_q2">Quelles chambres peut-on réserver ?</h3>
+          <p data-i18n="faq_a2">Trois chambres : Albert Einstein (170 €, 225 € ou 300 € selon le nombre de personnes), Atelier du Peintre (165 €) et Golf Club (175 €). Petit-déjeuner compris, hors événements spéciaux.</p>
+          <h3 data-i18n="faq_q3">Le petit-déjeuner est-il compris ?</h3>
+          <p data-i18n="faq_a3">Oui. Le petit-déjeuner est compris dans les prix affichés des trois chambres.</p>
+          <h3 data-i18n="faq_q4">Comment réserver une chambre ?</h3>
+          <p data-i18n="faq_a4">Par le formulaire du site. La maison confirme ensuite. Téléphone : +32 476 88 68 20. Email : lvdpdc@gmail.com.</p>
+        </div>
+      </div>
+    </section>
+    <iframe class="map" title="Carte de La Villa du Pré du Cerf" src="https://www.google.com/maps?q=La+Villa+du+Pr%C3%A9+du+Cerf,+3+Chemin+de+Frahinfaz,+4900+Spa&output=embed"></iframe>
+    <section class="section" id="contact">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <p class="kicker" data-i18n="contact_kicker">Contact</p>
+          <h2 class="headline" data-i18n="contact_title">Contactez-nous</h2>
+          <div class="contact-list">
+            <div>
+              <h3 data-i18n="label_address">Adresse</h3>
+              <p>3 Chemin de Frahinfaz, 4900 Spa, Belgique</p>
+            </div>
+            <div>
+              <h3 data-i18n="stay_label">Séjour</h3>
+              <p data-i18n="stay_text">Maison d'hôtes, sur réservation</p>
+            </div>
+            <div>
+              <h3 data-i18n="label_email">Email</h3>
+              <p><a href="mailto:lvdpdc@gmail.com">lvdpdc@gmail.com</a></p>
+            </div>
+            <div>
+              <h3 data-i18n="label_phone">Téléphone</h3>
+              <p><a href="tel:+32476886820">+32 476 88 68 20</a></p>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <img src="assets/img/chefs/christine.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Christine</h4>
-                  <span>Madame la baronne</span>
-                </div>
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
-              </div>
+        </div>
+        <form class="book-card reveal" action="https://formspree.io/f/xqkojnqe" method="post">
+          <div class="book-fields">
+            <div class="field">
+              <label for="contact-name" data-i18n="label_name">Nom</label>
+              <input id="contact-name" name="name" required autocomplete="name" data-i18n-placeholder="ph_name" placeholder="Votre nom">
+            </div>
+            <div class="field">
+              <label for="contact-email" data-i18n="label_email">Email</label>
+              <input id="contact-email" name="email" type="email" required autocomplete="email" data-i18n-placeholder="ph_email" placeholder="Votre mail">
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <img src="assets/img/chefs/chien.png" class="img-fluid" style="background: transparent;" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>La Chef</h4>
-                  <span>Madame carpette</span>
-                </div>
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
-              </div>
-            </div>
+          <div class="field">
+            <label for="contact-subject" data-i18n="label_subject">Sujet</label>
+            <input id="contact-subject" name="subject" data-i18n-placeholder="ph_subject" placeholder="Sujet">
           </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Chefs Section -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Commentaires clients</h2>
-          <p>Ce qu'on dit de nous</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <i class="bx title">Magnifique séjour!</i>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Accueil convivial et chaleureux. Bâtiment magnifiquement rénové et décoré avec goût. Très belles
-                  pièces (tant les chambres que la pièce salon / salle à manger. Calme et quiétude à deux pas du
-                  centre-ville. Petit déjeuner délicieux. Merci !
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-
-                <h3>Julien</h3>
-                <h4>1 nuit mai 2023</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <i class="bx title">Une adresse bucolique pleine de charmes</i>
-                <p>
-
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Nous avions déjà séjourné dans cet maison d'hôte . Le petit déjeuner est vraiment exceptionnel :
-                  varié
-                  ,
-                  copieux et fait "maison" . Les propriétaires ont rénové cette belle batisse avec beaucoup de goûts
-                  et
-                  dans les moindres détails. La villa est superbement bien placé devant une immense prairie et des
-                  forêts et à 2 pas des thermes. Et les propriétaires sont charmants.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-
-                <h3>Pierre</h3>
-                <h4>2 nuit mars 2023</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <i class="bx title">Exceptionnel</i>
-                <p>
-
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Magnifique lieu, magnifique environnement, magnifique hôte ! Que demander de plus :-)
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-
-                <h3>Nicole</h3>
-                <h4>1 nuit Octobre 2021</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <i class="bx title">Atmosphère tres agréable!</i>
-                <p>
-
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Accueil chaleureux et très à l écoute. Très bien décoré avec les soucis du details. Séjour tres
-                  agréable. Petit déjeuner au top
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <h3>Adrien</h3>
-                <h4>1 nuit Juin 2023</h4>
-
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <i class="bx title">Super séjour</i>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Super petit déjeuner. Gentillesse de l'hôte. Propreté. Calme.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <h3>Marie</h3>
-                <h4>1 nuit Mai 2023</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
+          <div class="field">
+            <label for="contact-message" data-i18n="label_message">Message</label>
+            <textarea id="contact-message" name="message" required data-i18n-placeholder="ph_message" placeholder="Message"></textarea>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
+          <button class="btn btn-solid" type="submit" data-i18n="send">Envoyer le message</button>
+        </form>
       </div>
-    </section><!-- End Testimonials Section -->
+    </section>
+  </main>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>
-            <div class="lang" key="contact">Contact</div>
-          </h2>
-          <p class="lang" key="contact_1">Contactez-nous</p>
-        </div>
-      </div>
-
-      <div data-aos="fade-up"></div>
-      <iframe style="border:0; width: 100%; height: 350px;"
-        src="https://www.google.com/maps/embed/v1/search?q=La+Villa+du+Pré+Du+Cerf,+Chemin+de+Frahinfaz,+Spa,+Belgium&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-      </div>
-
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="row mt-5">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Adresse:</h4>
-                <p>3 Chemin de Frahinfaz, 4900 Spa, Belgique</p>
-              </div>
-
-              <div class="open-hours">
-                <i class="bi bi-clock"></i>
-                <h4>Heures d'ouverture :</h4>
-                <p>
-                  Lundi-Dimanche:<br>
-                  11:00 AM - 23:00 PM
-                </p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>lvdpdc@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Téléphone:</h4>
-                <p>+32 0476 88 68 20</p>
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            <form id="contact-form" action="https://formspree.io/f/xqkojnqe" method="post" role="form"
-              class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name-contact-form" placeholder="Votre nom"
-                    required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email-contact-form" placeholder="Votre mail"
-                    required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject-contact-form" placeholder="Sujet"
-                  required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <!-- <div class="loading">Loading</div> -->
-                <!-- <div class="error-message"></div> -->
-                <!-- <div class="sent-message">Votre message a été envoyé. Merci!</div> -->
-              </div>
-              <div class="text-center"><button type="submit">Envoyer message</button></div>
-            </form>
-          </div>
-
-
-
-        </div>
-
-      </div>
-
-
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>LVDPDC</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="http://julienhubar.be/">Udata</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-
-
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/lang.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+  <footer>
+    <p>&copy; Copyright <strong>LVDPDC</strong>. All Rights Reserved</p>
+    <p>Designed by <a href="https://julienhubar.be/">Udata</a></p>
+  </footer>
+  <button class="to-top" type="button" hidden aria-label="Haut de page">↑</button>
+  <dialog id="lightbox"><button type="button" data-close aria-label="Fermer">×</button><img alt=""></dialog>
+  <script src="assets/js/villa.js"></script>
 </body>
-
 </html>

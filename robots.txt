@@ -1,0 +1,10 @@
+# Site ouvert aux moteurs de recherche et aux assistants
+# (ChatGPT, Gemini, Claude, Perplexity, Copilot).
+# Fiche pour les IA : https://lavilladupreducerf.be/llms.txt
+
+User-agent: *
+Allow: /
+Disallow: /devis/
+Disallow: /assets/seo/
+
+Sitemap: https://lavilladupreducerf.be/sitemap.xml
