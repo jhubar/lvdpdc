@@ -321,7 +321,7 @@ main .book { margin-top: 56px; }
 .book-card:has(input[name="room"][value="Albert Einstein"]:checked) .bed-field { display: flex; }
 .room-picks {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 8px;
   margin: 0;
   border: 0;
@@ -457,7 +457,7 @@ textarea { min-height: 140px; resize: vertical; }
 .lead { max-width: 42em; color: var(--muted); }
 .facts {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin: 8px 0 36px;
 }

@@ -13,6 +13,6 @@ Quand un prix, un texte ou une chambre change :
 5. Mettre la date du jour dans sitemap.xml (lastmod).
 
 Ne pas décrire une chambre qui n'a pas encore de page.
-Le Café Cramique et le gîte Sous le Tilleul s'ajoutent quand leurs pages sont en ligne.
+Le Café Cramique a une page. Son prix et ses photos restent à compléter. Le gîte Sous le Tilleul s'ajoute quand sa page est en ligne.
 
 Ce fichier et le dossier devis/ sont exclus dans robots.txt.
