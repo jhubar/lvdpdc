@@ -143,6 +143,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .hero h1 { font-size: clamp(36px, 5vw, 58px); font-weight: 700; }
 .hero h1 span { display: block; }
 .hero h1 span:last-child { color: var(--gold); }
+.hero-lead { max-width: 34em; margin: 16px 0 0; font-size: 18px; line-height: 1.5; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
 .btn {
   display: inline-flex;
@@ -392,6 +393,16 @@ textarea { min-height: 140px; resize: vertical; }
   background: #100e0c;
 }
 .places .card img.is-photo { object-fit: cover; padding: 0; }
+.places .card .mark {
+  display: grid;
+  place-items: center;
+  width: 132px;
+  min-height: 156px;
+  background: #100e0c;
+  color: var(--gold);
+  font-family: var(--display);
+  font-size: 28px;
+}
 #loisir .places .card { grid-template-columns: 1fr; }
 #loisir .places .card img {
   width: 100%;
@@ -625,7 +636,7 @@ dialog button {
   .form-grid .wide, .span-3 { grid-column: auto; }
   #restaurant .places, #bien_etre .places, #loisir .places { grid-template-columns: 1fr; }
   #restaurant .places .card, #bien_etre .places .card { grid-template-columns: 104px 1fr; }
-  #restaurant .places .card img, #bien_etre .places .card img { width: 104px; min-height: 128px; padding: 12px; }
+  #restaurant .places .card img, #bien_etre .places .card img, #bien_etre .places .card .mark { width: 104px; min-height: 128px; padding: 12px; }
   #bien_etre .places .card img.is-photo { padding: 0; }
   #loisir .places .card { grid-template-columns: 1fr; }
   #loisir .places .card img { width: 100%; height: 96px; min-height: 0; }
