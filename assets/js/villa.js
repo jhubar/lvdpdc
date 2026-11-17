@@ -27,6 +27,7 @@
       pass_note: "Pass Thermes de 3 h : 100 € par personne, en option. La maison confirme.",
       thermes_text: "La villa est à côté des Thermes de Spa, sur la colline d'Annette et Lubin. Les hôtes viennent pour se détendre, et la plupart en profitent pour y aller. Pass de 3 heures : 100 € par personne. La maison confirme.",
       see: "Voir les disponibilités",
+      avail_kicker: "Disponibilités",
       einstein_lead: "Un hommage inspirant à l'esprit révolutionnaire.",
       einstein_1: "Décor élégant avec des références à ses découvertes.",
       einstein_2: "Confort luxueux et ambiance propice à la réflexion.",
@@ -150,6 +151,7 @@
       pass_note: "3-hour Thermes de Spa pass: €100 per person, optional. The house confirms.",
       thermes_text: "The house is next to the Thermes de Spa, on the Colline d'Annette et Lubin. Guests come to relax, and most of them go. A 3-hour pass is €100 per person. The house confirms.",
       see: "See availability",
+      avail_kicker: "Availability",
       einstein_lead: "An inspiring tribute to a revolutionary mind.",
       einstein_1: "Decor with references to his discoveries.",
       einstein_2: "Quiet comfort, made for thinking.",
@@ -263,6 +265,31 @@
       btn.setAttribute("aria-pressed", btn.getAttribute("data-lang") === lang ? "true" : "false");
     });
     try { localStorage.setItem("lvdpdc-lang", lang); } catch (e) {}
+    translateCal(lang);
+  }
+
+  var CAL_DAYS = { Sun: "Dim", Mon: "Lun", Tue: "Mar", Wed: "Mer", Thu: "Jeu", Fri: "Ven", Sat: "Sam" };
+  var CAL_MONTHS = { Jan: "janv.", Feb: "févr.", Mar: "mars", Apr: "avr.", May: "mai", Jun: "juin", Jul: "juil.", Aug: "août", Sep: "sept.", Oct: "oct.", Nov: "nov.", Dec: "déc." };
+
+  function translateCal(lang) {
+    document.querySelectorAll(".beds24availcal td, .beds24availcal option").forEach(function (el) {
+      if (el.children.length) return;
+      if (!el.getAttribute("data-en")) el.setAttribute("data-en", el.textContent);
+      var raw = el.getAttribute("data-en");
+      if (lang !== "fr") {
+        el.textContent = raw;
+        return;
+      }
+      var text = raw.trim();
+      if (text === "Click your arrival date") text = "Choisissez votre date d'arrivée";
+      else if (CAL_DAYS[text]) text = CAL_DAYS[text];
+      else {
+        Object.keys(CAL_MONTHS).forEach(function (en) {
+          text = text.replace(en, CAL_MONTHS[en]);
+        });
+      }
+      el.textContent = text;
+    });
   }
 
   document.querySelectorAll("[data-lang]").forEach(function (btn) {
@@ -270,7 +297,7 @@
   });
   var saved = "fr";
   try { saved = localStorage.getItem("lvdpdc-lang") || "fr"; } catch (e) {}
-  if (saved === "en") applyLang("en");
+  applyLang(saved === "en" ? "en" : "fr");
 
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".nav");

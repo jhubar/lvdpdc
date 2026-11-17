@@ -293,6 +293,19 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .book-intro > :not(.checks):not(.book-phone) { grid-column: 1; }
 .book-intro .checks { grid-column: 2; grid-row: 1 / span 3; margin: 0; }
 .book-intro .book-phone { grid-column: 2; margin: 8px 0 0; }
+.avail { margin: 8px 0 22px; }
+.avail .kicker { margin-bottom: 12px; }
+.avail-cal { margin: 0; max-width: 340px; }
+#disponibilites { scroll-margin-top: calc(var(--topbar) + var(--header) + 16px); }
+.beds24availcal > tbody > tr:first-child { display: none; }
+.beds24availcal table { height: auto !important; }
+.beds24availcal tr[title] td {
+  font-size: 11px !important;
+  letter-spacing: 0.02em;
+  opacity: 0.55;
+  text-align: right !important;
+}
+
 .book-embed iframe {
   display: block;
   width: 100%;
@@ -666,4 +679,99 @@ dialog button {
   .gallery button { height: 140px; }
   .about-photo img, .room-slide img, .member img { height: 260px; }
   .play { margin-top: 30px; }
+}
+
+/* Agenda Beds24 dessiné dans la page. Les couleurs en ligne sont écrasées ici. */
+.beds24availcal,
+.beds24availcal table,
+.book-widget,
+.book-widget .ui-datepicker {
+  background: #1a1814 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(205, 164, 94, 0.22) !important;
+  border-collapse: collapse !important;
+  font-family: "Open Sans", Arial, sans-serif !important;
+  width: 100% !important;
+  max-width: 340px !important;
+}
+
+.beds24availcal a,
+.beds24availcal td,
+.book-widget,
+.book-widget .ui-datepicker,
+.book-widget .ui-datepicker-title {
+  color: #ffffff !important;
+  font-family: "Open Sans", Arial, sans-serif !important;
+}
+
+.beds24availcal a {
+  color: #d9ba85 !important;
+  font-family: Georgia, "Palatino Linotype", serif !important;
+  font-size: 18px !important;
+  text-decoration: none !important;
+}
+
+.beds24availcal td {
+  border-color: rgba(205, 164, 94, 0.22) !important;
+  background: transparent !important;
+  padding: 7px 2px !important;
+  height: auto !important;
+  font-size: 13px !important;
+  text-align: center !important;
+}
+
+.beds24availcal td[style*="pointer"] {
+  background: #cda45e !important;
+  color: #0c0b09 !important;
+}
+
+.beds24availcal td[style*="default"] {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.35) !important;
+  cursor: default !important;
+}
+
+.beds24availcal select,
+.beds24availcal input:not([type="hidden"]),
+.book-widget input,
+.book-widget select,
+.book-widget button {
+  width: auto !important;
+  display: inline-block !important;
+  background: #0c0b09 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(205, 164, 94, 0.35) !important;
+  border-radius: 0 !important;
+  padding: 8px 12px !important;
+  vertical-align: middle;
+  font-family: "Open Sans", Arial, sans-serif !important;
+}
+
+.beds24availcal input[type="button"],
+.book-widget button {
+  width: 42px !important;
+  margin: 0 8px;
+  padding: 8px 0 !important;
+  background: #cda45e !important;
+  color: #0c0b09 !important;
+  border: 0 !important;
+  cursor: pointer;
+}
+
+.beds24availcal select {
+  max-width: none !important;
+  min-width: 9em;
+}
+
+.book-widget .ui-datepicker td .ui-state-default {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.35) !important;
+  border: 0 !important;
+}
+
+.book-widget .ui-datepicker td.avail .ui-state-default,
+.book-widget .ui-datepicker td .ui-state-active,
+.book-widget .ui-datepicker td .ui-state-hover {
+  background: #cda45e !important;
+  color: #0c0b09 !important;
 }

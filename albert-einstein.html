@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-  <link href="assets/css/villa.css?v=20261116g" rel="stylesheet">
+  <link href="assets/css/villa.css?v=20261117g" rel="stylesheet">
 </head>
 <body>
   <div class="topbar">
@@ -86,7 +86,7 @@
       <h1>Albert Einstein</h1>
       <ol class="crumbs">
         <li><a href="index.html" data-i18n="home">Accueil</a></li>
-        <li><button type="button" data-calendar="https://calendar.google.com/calendar/embed?src=2iff5orohpup2r34vtn3u7of92o8siqe%40import.calendar.google.com&ctz=Europe%2FBrussels" data-i18n="see">Voir les disponibilités</button></li>
+        <li><a href="#disponibilites" data-i18n="see">Voir les disponibilités</a></li>
       </ol>
     </div>
   </section>
@@ -112,6 +112,14 @@
           <p data-i18n="pass_note">Pass Thermes de 3 h : 100 € par personne, en option. La maison confirme.</p>
           <p class="book-phone"><a href="tel:+32479997321">+32 479 99 73 21</a></p>
         </div>
+        <div class="avail" id="disponibilites">
+          <p class="kicker" data-i18n="avail_kicker">Disponibilités</p>
+          <form id="ac00758046" class="avail-cal" method="get" action="https://beds24.com/booking2.php" target="_blank">
+            <input type="hidden" name="roomid" value="758046">
+            <input type="hidden" name="fdate" value="">
+          </form>
+          <script src="https://beds24.com/availcal/cal.jsp?roomid=758046"></script>
+        </div>
         <div class="book-embed reveal">
           <iframe title="Réserver une chambre à La Villa du Pré du Cerf" src="https://beds24.com/booking2.php?propid=368230&amp;referer=iframe" width="800" height="720" style="width:100%;border:0;background:#1a1814;"><p><a href="https://beds24.com/booking2.php?propid=368230&amp;referer=iframe">Réserver</a></p></iframe>
         </div>
@@ -124,6 +132,6 @@
   </footer>
   <button class="to-top" type="button" hidden aria-label="Haut de page">↑</button>
   <dialog id="lightbox"><button type="button" data-close aria-label="Fermer">×</button><img alt=""></dialog>
-  <script src="assets/js/villa.js?v=20261117b"></script>
+  <script src="assets/js/villa.js?v=20261117g"></script>
 </body>
 </html>
