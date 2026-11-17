@@ -1,8 +1,49 @@
-# Site ouvert aux moteurs de recherche et aux assistants
-# (ChatGPT, Gemini, Claude, Perplexity, Copilot).
+# Ouvert à Google (recherche, AI Overviews, AI Mode) et aux assistants.
 # Fiche pour les IA : https://lavilladupreducerf.be/llms.txt
+# Chaque groupe répète les mêmes interdictions : un robot nommé
+# n'hérite pas des règles de User-agent: *.
 
 User-agent: *
+Allow: /
+Disallow: /devis/
+Disallow: /assets/seo/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /devis/
+Disallow: /assets/seo/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /devis/
+Disallow: /assets/seo/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /devis/
+Disallow: /assets/seo/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /devis/
+Disallow: /assets/seo/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /devis/
+Disallow: /assets/seo/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /devis/
+Disallow: /assets/seo/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /devis/
+Disallow: /assets/seo/
+
+User-agent: PerplexityBot
 Allow: /
 Disallow: /devis/
 Disallow: /assets/seo/
