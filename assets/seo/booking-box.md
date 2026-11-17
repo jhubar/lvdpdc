@@ -38,10 +38,27 @@ Après Refresh, Get Code donne le code à intégrer sur le site. Le coller dans 
 | Fond | `#1a1814` |
 | Bordure | `#cda45e` |
 | Texte | `#ffffff` |
-| Fond du bouton | `#cda45e` |
-| Texte du bouton | `#0c0b09` |
+| button background-color | `#cda45e` |
+| button-color | `#cda45e` |
+| button text | `#0c0b09` |
+| past background color | `#1a1814` |
+| past color | `#6a6966` |
+| available background color | `#cda45e` |
+| available color | `#0c0b09` |
+| unavailable background color | `#1a1814` |
+| unavailable color | `#6a6966` |
+| request background color | `#cda45e` |
+| request color | `#0c0b09` |
+| search label | vide |
+| redirect URL | vide |
 
 Laisser vides le groupe, l’identifiant propriétaire et le paramètre personnalisé. Ne pas créer de boîte pour l’Atelier du Peintre.
+
+Les dates passées et les dates prises ont le fond brun `#1a1814` et un texte gris `#6a6966`. Les dates libres et les dates en demande ont le fond or `#cda45e` et le texte `#0c0b09` : une nuit libre se demande à la maison, les deux états se lisent pareil.
+
+`search label` est le texte d’un lien de recherche entre plusieurs propriétés. La villa n’en a qu’une : laisser vide.
+
+`redirect URL` est une adresse vers laquelle Beds24 renvoie l’hôte juste après le clic, une fois les dates enregistrées. Laisser vide : le formulaire ouvre déjà `https://beds24.com/booking2.php`.
 
 ## Chambres, si le formulaire demande un identifiant
 
