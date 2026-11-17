@@ -274,12 +274,31 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   outline-offset: 2px;
 }
 
-#book-a-table { scroll-margin-top: calc(var(--topbar) + var(--header) + 16px); }
+#book-a-table {
+  scroll-margin-top: calc(var(--topbar) + var(--header) + 16px);
+  background: #1a1814;
+}
 .book {
   display: grid;
-  grid-template-columns: minmax(240px, 0.82fr) 1.18fr;
-  gap: 48px;
+  grid-template-columns: 1fr;
+  gap: 8px;
   align-items: start;
+}
+.book-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(220px, 0.7fr);
+  column-gap: 48px;
+  align-items: end;
+}
+.book-intro > :not(.checks):not(.book-phone) { grid-column: 1; }
+.book-intro .checks { grid-column: 2; grid-row: 1 / span 3; margin: 0; }
+.book-intro .book-phone { grid-column: 2; margin: 8px 0 0; }
+.book-embed iframe {
+  display: block;
+  width: 100%;
+  height: 720px;
+  border: 0;
+  background: #1a1814;
 }
 main .book { margin-top: 56px; }
 .book .headline { margin-bottom: 12px; }
@@ -629,9 +648,12 @@ dialog button {
   .header.is-stuck .nav { top: var(--header); }
   .book-link { display: none; }
   .nav .book-link { display: inline-flex; margin-top: 8px; }
-  .hero-grid, .about-grid, .room-slide, .contact-grid, .cards, .team, .form-grid, .facts, .book, .book-fields, .room-picks {
+  .hero-grid, .about-grid, .room-slide, .contact-grid, .cards, .team, .form-grid, .facts, .book, .book-fields, .room-picks, .book-intro {
     grid-template-columns: 1fr;
   }
+  .book-intro > :not(.checks):not(.book-phone),
+  .book-intro .checks,
+  .book-intro .book-phone { grid-column: 1; grid-row: auto; }
   .room-picks legend { grid-column: auto; }
   .form-grid .wide, .span-3 { grid-column: auto; }
   #restaurant .places, #bien_etre .places, #loisir .places { grid-template-columns: 1fr; }

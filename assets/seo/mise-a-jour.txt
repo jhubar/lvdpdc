@@ -13,7 +13,7 @@ Quand un prix, un texte ou une chambre change :
 5. Mettre la date du jour dans sitemap.xml (lastmod).
 
 Ne pas décrire une chambre qui n'a pas encore de page.
-Le Café Cramique et Sous le Tilleul ont une page, des photos et un prix de 175 € la nuit.
+Prix habituel : Albert Einstein 160 €, 225 € ou 300 € ; Golf Club 160 € ; Café Cramique 160 € ; Sous le Tilleul 160 €.
 Un pass Thermes de 3 h est affiché à 100 € par personne, en option avec la réservation. La villa se présente comme un logement calme à côté des Thermes : les hôtes viennent pour se détendre, et la plupart en profitent pour y aller. Lien officiel des Thermes : https://thermesdespa.com/home/
 Atelier du Peintre n'est pas à la location pour l'instant. La page, les photos et les textes restent dans le projet. La chambre n'est plus proposée ni réservable.
 

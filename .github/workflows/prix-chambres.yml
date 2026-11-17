@@ -1,0 +1,32 @@
+name: Prix des chambres
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 6 h en hiver, 7 h en été, heure de Bruxelles.
+    - cron: "0 5 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Lire les prix Beds24
+        env:
+          BEDS24_PRICING_ROOM_REFRESH_TOKEN: ${{ secrets.BEDS24_PRICING_ROOM_REFRESH_TOKEN }}
+          BEDS24_PROPERTY_ID: "368230"
+        run: python3 scripts/sync-beds24-prices.py
+      - name: Enregistrer si un prix a changé
+        run: |
+          git diff --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html albert-einstein.html golf-club.html cafe-cramique.html sous-le-tilleul.html atelier-du-peintre.html assets/js/villa.js llms.txt assets/seo/mise-a-jour.txt sitemap.xml
+          git commit -m "Mettre à jour les prix des chambres depuis Beds24."
+          git push

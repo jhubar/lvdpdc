@@ -1,0 +1,110 @@
+/* Couleurs de La Villa du Pré du Cerf, pour la page de réservation Beds24. */
+
+body.colorbody,
+.colorbody,
+.atcolor,
+#bookingpage,
+.innertube,
+.colorbookingform,
+.at_headnostay {
+  background: #1a1814 !important;
+  background-color: #1a1814 !important;
+  color: #ffffff !important;
+}
+
+#bookingpage {
+  max-width: none !important;
+  padding: 0 0 8px !important;
+}
+
+a,
+.fakelink,
+.linkcolor,
+.book_poweredby a {
+  color: #d9ba85 !important;
+}
+
+.at_roomnametext {
+  color: #ffffff !important;
+  font-family: Georgia, "Palatino Linotype", serif !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em;
+  padding: 10px 0 2px !important;
+}
+
+.colorbookingstrip,
+.at_roomname {
+  background: transparent !important;
+  background-image: none !important;
+}
+
+.bt,
+.bb,
+.br,
+.bl,
+.border,
+table.availabilitytable td {
+  border-color: rgba(205, 164, 94, 0.22) !important;
+  background: transparent !important;
+  background-image: none !important;
+}
+
+input.button,
+.at_bookingbut,
+.button {
+  background: #cda45e !important;
+  background-image: none !important;
+  color: #0c0b09 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-family: Georgia, "Palatino Linotype", serif !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.04em;
+  padding: 11px 16px !important;
+  margin: 0 0 8px !important;
+  width: 100% !important;
+  cursor: pointer;
+}
+
+input.button:hover,
+.at_bookingbut:hover,
+.button:hover {
+  background: #d9ba85 !important;
+  color: #0c0b09 !important;
+}
+
+.alert,
+.alert-warning,
+.bookinglocked {
+  background: transparent !important;
+  border: 0 !important;
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-size: 14px !important;
+  padding: 8px 4px 4px !important;
+  text-align: left !important;
+}
+
+#country-select {
+  text-align: right;
+}
+
+#country-select input[type="submit"] {
+  display: none !important;
+}
+
+#country-options {
+  background: #0c0b09 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(205, 164, 94, 0.35) !important;
+  padding: 6px 8px !important;
+  width: auto !important;
+}
+
+.book_poweredby {
+  font-size: 12px;
+  opacity: 0.6;
+  text-align: right;
+}
